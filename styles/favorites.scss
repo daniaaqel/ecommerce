@@ -1,0 +1,119 @@
+@import "./variables.scss";
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf")
+    format("truetype");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+  background-color: var(--bg-offwhite);
+}
+.favorites {
+  .form-check-input {
+    width: 1.5em;
+    height: 1.5em;
+  }
+  .rectangle {
+    height: 196px;
+    width: 196px;
+    margin-left: 16px;
+    border-radius: 10px;
+    border: 1px solid $color747474;
+    margin-bottom: 21px;
+  }
+  .dash-rectangle {
+    height: 196px;
+    width: 196px;
+    margin-left: 16px;
+    border-radius: 10px;
+    border: 2px dashed $color747474;
+    margin-bottom: 21px;
+  }
+  a {
+    text-decoration: none;
+    color: $color121212;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .phone-collection {
+    i.fa-solid {
+      display: inline-block;
+      border-radius: 60px;
+      background-color: $active;
+      padding: 6px 6px;
+      color: white;
+      font-size: 12px;
+    }
+  }
+  .form-check-input {
+    margin-top: 0px;
+  }
+  i.fa-circle-plus {
+    color: $color747474;
+    position: relative;
+    right: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .favourite-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .favourite-container .slider {
+    flex-shrink: 0;
+    width: auto;
+  }
+  .favourite-container::-webkit-scrollbar {
+    width: 0;
+  }
+}
+.firstClass,
+.secondClass,
+.thirdClass,
+.forthClass {
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  i {
+    display: none;
+  }
+  div {
+    display: none;
+  }
+  &:hover {
+    justify-content: center;
+    i {
+      display: inline-block;
+      border-radius: 60px;
+      background-color: $active;
+      padding: 6px 6px;
+      color: white;
+      font-size: 12px;
+    }
+    div {
+      display: none;
+    }
+  }
+  &:active {
+    justify-content: space-between;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    border-radius: var(--bs-border-radius) !important;
+    div {
+      display: flex;
+    }
+    i {
+      display: none;
+    }
+  }
+}

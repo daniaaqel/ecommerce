@@ -1,0 +1,347 @@
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf") format("truetype");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome-page .main-btn {
+  border: 1px solid #f2f2ff;
+  width: 167px;
+  height: 40px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 123px;
+  top: 10px;
+}
+.welcome-page .right {
+  position: absolute;
+  right: 60px;
+}
+.welcome-page .welcome {
+  color: #ffffff;
+  font-weight: bold;
+  top: 240px;
+}
+.welcome-page .text-input {
+  width: 394px;
+  height: 60px;
+  border-radius: 4px;
+  border: 2px solid #f1f3f4;
+  background-color: rgba(23, 23, 23, 0.1803921569);
+}
+.welcome-page .text-input::-moz-placeholder {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 50%;
+}
+.welcome-page .text-input::placeholder {
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 50%;
+}
+.welcome-page .password-lable-position {
+  top: 450px;
+}
+.welcome-page .password-position {
+  top: 470px;
+}
+.welcome-page .lable-color {
+  color: #ffffff;
+  font-weight: 500;
+}
+.welcome-page .lable-position {
+  top: 330px;
+}
+.welcome-page .mar-left {
+  margin-left: 220px;
+}
+.welcome-page .text-position {
+  top: 360px;
+}
+.welcome-page .login-btn {
+  width: 230px;
+  height: 46px;
+  border-radius: 4px;
+  color: #ffffff;
+  background-color: #456ed6;
+  border: none;
+  top: 580px;
+  font-weight: 500;
+}
+.welcome-page .logo-btn1 {
+  width: 46px;
+  height: 46px;
+  border: 0.5px solid #9f9f9f;
+  background-color: #ffffff;
+  border-radius: 7.5px;
+  top: 580px;
+  right: 300px;
+}
+.welcome-page .logo-btn2 {
+  width: 46px;
+  height: 46px;
+  border: 0.5px solid #9f9f9f;
+  background-color: #ffffff;
+  border-radius: 7.5px;
+  top: 580px;
+  right: 350px;
+}
+.welcome-page .eye-class {
+  left: 20px;
+  top: 20px;
+}
+.welcome-page .eye-class2 {
+  left: 20px;
+  top: 20px;
+}
+.welcome-page .mt-93 {
+  margin-top: 93px;
+}
+.welcome-page .over-lay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom right, rgba(69, 110, 214, 0.67), rgba(69, 110, 214, 0.67));
+}
+.welcome-page .div-position {
+  padding-top: 93px;
+  padding-right: 103px;
+}
+.welcome-page .div-position .margin-top {
+  margin-top: 36px;
+}
+.welcome-page .welcome-text {
+  color: #1650a3;
+  font-weight: bold;
+}
+.welcome-page .input-style {
+  width: 256px;
+  height: 60px;
+  border: 2px solid #f1f3f4;
+}
+.welcome-page .input-style::-moz-placeholder {
+  color: #262626;
+  opacity: 50%;
+  font-size: 14px;
+}
+.welcome-page .input-style::placeholder {
+  color: #262626;
+  opacity: 50%;
+  font-size: 14px;
+}
+.welcome-page .hidden-btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.color {
+  color: #191a1b;
+  font-weight: 350;
+}
+
+.lable-color3 {
+  color: #aaaaaa;
+}
+
+.btn-close {
+  box-sizing: inherit;
+}
+
+.flex-fill {
+  flex: 1 1 auto;
+}
+
+.container-fluid {
+  padding-right: 0px;
+}
+
+.black-color {
+  color: #000000;
+}
+
+.active-color {
+  color: #456ed6;
+}
+
+.close-color {
+  color: #cdd4d9;
+}
+
+/* 125 */
+@media screen and (max-width: 1093px) {
+  .welcome-page .row {
+    --bs-gutter-x: 0rem;
+  }
+  .welcome-page .mar-left {
+    margin-left: 270px;
+  }
+  .welcome-page .input-style {
+    width: 200px;
+    height: 60px;
+  }
+  .welcome-page .div-position .fs-14 {
+    font-size: 13px !important;
+  }
+}
+@media screen and (max-width: 1093px) {
+  .welcome-page .div-position .fs-14 {
+    font-size: 13px !important;
+  }
+}
+/* 150 */
+@media screen and (max-width: 950px) {
+  .welcome-page .right {
+    position: absolute;
+    right: 45px;
+  }
+  .welcome-page .text-input {
+    width: 300px;
+  }
+  .welcome-page .mar-left {
+    margin-left: 168px;
+  }
+  .welcome-page .welcome {
+    top: 140px;
+  }
+  .welcome-page .lable-position {
+    top: 185px;
+  }
+  .welcome-page .text-position {
+    top: 205px;
+  }
+  .welcome-page .password-lable-position {
+    top: 295px;
+  }
+  .welcome-page .password-position {
+    top: 316px;
+  }
+  .welcome-page .login-btn {
+    top: 436px;
+    width: 175px;
+  }
+  .welcome-page .logo-btn1 {
+    top: 436px;
+    right: 228px;
+  }
+  .welcome-page .logo-btn2 {
+    top: 436px;
+    right: 278px;
+  }
+  .welcome-page .fs-16 {
+    font-size: 13px !important;
+  }
+  .welcome-page .fs-24 {
+    font-size: 18px !important;
+  }
+  .welcome-page .main-btn {
+    width: 127px;
+  }
+  .welcome-page .text-input::-moz-placeholder {
+    font-size: 10px !important;
+  }
+  .welcome-page .text-input::placeholder {
+    font-size: 10px !important;
+  }
+  .welcome-page .div-position {
+    padding-top: 50px;
+    padding-right: 45px;
+  }
+  .welcome-page .div-position .fs-14 {
+    font-size: 12px !important;
+  }
+  .welcome-page .input-style {
+    width: 152px;
+    height: 60px;
+  }
+  .welcome-page .input-style::-moz-placeholder {
+    font-size: 10px;
+  }
+  .welcome-page .input-style::placeholder {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 1243px) {
+  .welcome-page .input-style {
+    width: 240px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1093px) {
+  .welcome-page .input-style {
+    width: 200px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .welcome-page .welcome {
+    top: 130px;
+  }
+  .welcome-page .lable-position {
+    top: 175px;
+  }
+  .welcome-page .text-position {
+    top: 195px;
+  }
+  .welcome-page .password-lable-position {
+    top: 265px;
+  }
+  .welcome-page .password-position {
+    top: 290px;
+  }
+  .welcome-page .login-btn {
+    top: 350px;
+  }
+  .welcome-page .logo-btn1 {
+    top: 350px;
+  }
+  .welcome-page .logo-btn2 {
+    top: 350px;
+  }
+  .welcome-page .text-input {
+    height: 45px;
+  }
+  .welcome-page .eye-class {
+    top: 12px;
+  }
+  .welcome-page .input-style {
+    width: 300px;
+  }
+}
+@media (max-width: 992px) {
+  /*  .margin-top {
+    .col-lg-6 {
+      flex: 0 0 auto;
+      width: 47%;
+    }
+  } */
+  .welcome-page .div-position .margin-top {
+    margin-top: 0px;
+  }
+  .position-mobile {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}/*# sourceMappingURL=login.css.map */

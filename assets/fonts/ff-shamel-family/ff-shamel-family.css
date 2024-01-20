@@ -1,0 +1,10 @@
+@font-face {
+    font-family: ff-shamel-family;
+    src: url('ff-shamel-family.ttf');
+}
+
+@font-face {
+    font-family: ff-shamel-family;
+    src: url('./ff-shamel-family-bold.ttf');
+    font-weight: bold;
+}

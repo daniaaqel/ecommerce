@@ -1,0 +1,169 @@
+@import "./variables.scss";
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+@import "./helpers.scss";
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf")
+    format("truetype");
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+}
+
+.order-details {
+  .gray-div2 {
+    height: 51px;
+    background-color: rgba(246, 247, 248, 0.5);
+  }
+  .border-btm {
+    border-bottom: 3px solid $colorF6F7F8;
+  }
+  .medium-font {
+    font-weight: 500;
+    color: $color22262A;
+  }
+  .circle {
+    width: 68px;
+    height: 68px;
+    background: $colorfec440;
+    border-radius: 50%;
+    border: 6px solid $white;
+  }
+
+  .colored-line {
+    height: 7px;
+    background-color: $colorfec440;
+    opacity: 1;
+    flex: 1 0 auto;
+  }
+  .noncolored-line {
+    height: 7px;
+    background-color: $color747474;
+    opacity: 0.15;
+    flex: 1 0 auto;
+  }
+  .noncolored-circle {
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    border: 5px solid $color7474741C;
+    background-color: $white;
+  }
+  .cancle-btn {
+    width: 124px;
+    height: 38px;
+    border-radius: 6px;
+    background-color: $white;
+    color: $colorF83838;
+    font-weight: 500;
+    border: 1px solid $colorF83838;
+  }
+  .gray-div {
+    border: 2px solid $colorF1F3F4;
+    width: 100%;
+    height: auto;
+  }
+  .pending-btn {
+    border-radius: 6px;
+    width: 76px;
+    height: 29px;
+    background-color: $colorfec440;
+    color: $black;
+    font-weight: 500;
+    border: none;
+  }
+}
+.p-color {
+  color: $color171717;
+}
+
+.active-color {
+  color: $active;
+}
+
+.yellow-color {
+  color: $colorfec440;
+  font-weight: bold;
+}
+
+.color-747474 {
+  color: $color747474;
+}
+.color-22262A {
+  color: $color22262A;
+}
+.date {
+  font-size: 12px;
+}
+/* 125 */
+@media (max-width: 1093px) {
+  .circle {
+    .fs-12 {
+      font-size: 13px !important;
+    }
+    .fs-13 {
+      font-size: 14px !important;
+    }
+  }
+  .noncolored-circle {
+    .fs-12 {
+      font-size: 13px !important;
+    }
+    .fs-13 {
+      font-size: 14px !important;
+    }
+  }
+}
+@media (max-width: 950px) {
+  .date {
+    font-size: 10px;
+    text-align: center;
+  }
+  .order-details {
+    .fs-18 {
+      font-size: 12px !important;
+    }
+    .fs-16 {
+      font-size: 10px !important;
+    }
+    .fs-14 {
+      font-size: 10px !important;
+    }
+    .fs-20 {
+      font-size: 15px !important;
+    }
+    .fs-15 {
+      font-size: 12px !important;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+    .cancle-btn {
+      width: 90px;
+      height: 27.5px;
+    }
+    .circle {
+      width: 54px;
+      height: 54px;
+      .fs-12 {
+        font-size: 9px !important;
+      }
+      .fs-13 {
+        font-size: 9px !important;
+      }
+    }
+    .noncolored-circle {
+      width: 54px;
+      height: 54px;
+      .fs-12 {
+        font-size: 9px !important;
+      }
+      .fs-13 {
+        font-size: 9px !important;
+      }
+    }
+  }
+}

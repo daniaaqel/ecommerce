@@ -1,0 +1,87 @@
+@import "./variables.scss";
+
+/* Font Sizes */
+@for $i from 8 to 66 {
+  .fs-#{$i} {
+    font-size: $i + px !important;
+  }
+}
+
+/* Opacity */
+@for $i from 1 to 100 {
+  .opacity-#{$i} {
+    opacity: ($i * 0.01);
+  }
+}
+
+.text-395077 {
+  color: $color395077;
+}
+
+.form-control-border {
+  border: $form-control-border;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+[dir="ltr"] {
+  .rounded-start-0 {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+
+  .rounded-end-0 {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+}
+
+[dir="rtl"] {
+  .rounded-start-0 {
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+  }
+
+  .rounded-end-0 {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+  }
+}
+
+.text-active {
+  color: $active !important;
+}
+
+.text-FF4858 {
+  color: $colorFF4858;
+}
+
+.text-FF6875 {
+  color: $colorFF4858;
+}
+
+.bg-active {
+  background-color: $active;
+}
+
+.box-shadow-none {
+  box-shadow: none !important;
+}
+
+.header {
+  background-color: rgba(
+    red($colorF6F7F8),
+    green($colorF6F7F8),
+    blue($colorF6F7F8),
+    0.5
+  );
+  color: $active;
+  font-weight: bold;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  line-height: 17px;
+  letter-spacing: 0.35px;
+}

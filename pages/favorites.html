@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fratello Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Ar --->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.rtl.min.css"
+    />
+    <!---En--->
+    <!--   <link rel="stylesheet" href="../bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">  -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/favorites.css" />
+    <!--English styles-->
+    <!-- <link rel="stylesheet" href="../styles/styles-en.css">   -->
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo and search in navbar-->
+          <!--Logo in arabic page web-->
+          <img
+            class="img-fluid mb-3 me-4 ar-logo"
+            src="../assets/images/Group 37743.svg"
+            width="169"
+            height="43"
+          />
+          <!-- logo arabic page web-->
+          <div class="mb-3 justify-content-center en-logo">
+            <img
+              src="../assets/images/logo.svg"
+              alt="logo"
+              class="header-logo"
+              width="43"
+              height="43"
+            />
+            <div class="me-3">
+              <div class="text-uppercase fw-bold text-395077 fs-14">
+                fratello store
+              </div>
+              <img
+                src="../assets/images/call_center.svg"
+                alt="Brands You Need"
+              />
+            </div>
+          </div>
+          <div class="flex-grow-1 mb-3 hide-search">
+            <div class="d-flex">
+              <input
+                class="form-control fs-14 border-0 search rounded-end-0 p-3"
+                type="text"
+                placeholder="البحث..."
+                id="search"
+                name="search"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center p-3 border-0 search rounded-start-0 hide-btn"
+              >
+                <button type="button " class="btn p-0 box-shadow-none">
+                  <img src="../assets/images/search.svg" alt="search" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Logo in mobile arabic and english-->
+          <a class="resp-logo d-lg-none me-2" href="#"
+            ><img
+              class="img-fluid"
+              src="../assets/images/logo.svg"
+              width="43"
+              height="43"
+          /></a>
+          <!--Responsive Search-->
+          <div class="flex-grow-1 d-lg-none">
+            <div class="d-flex position-relative">
+              <input
+                class="form-control fs-12 search"
+                type="text"
+                placeholder="ابحث عن منتج"
+                id="search"
+                name="search"
+              />
+              <div class="d-flex position-absolute search-position mt-1">
+                <button
+                  type="button "
+                  class="btn search-btn d-flex justify-content-center align-items-center mx-2"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end mb-3 ms-4"
+            id="navbarNavDropdown"
+          >
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/compare.svg"
+                alt="compare"
+                width="20"
+                height="20"
+              />
+            </a>
+            <a href="./favorites.html" class="mx-2">
+              <img
+                src="../assets/images/icon-heart.svg"
+                alt="favorites"
+                width="20"
+                height="18"
+              />
+            </a>
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/bell.svg"
+                alt="notifications"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/globe.png"
+                alt="globe"
+                width="20"
+                height="24"
+              />
+            </a>
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/temp-avatar.svg"
+                alt="profile"
+                width="42"
+                height="42"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--Responsive menu-->
+      <div class="d-flex d-lg-none container-fluid justify-content-evenly">
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <button
+            class="shadow-0 border-0 bg-color"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasExample"
+          >
+            <img
+              src="../assets/images/menu2.PNG"
+              alt="menu2"
+              width="40"
+              height="40"
+              class="ms-3"
+            />
+          </button>
+          <!--ofcanvas starts-->
+          <div
+            class="offcanvas offcanvas-start"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+            data-bs-backdrop="scroll"
+          >
+            <div class="offcanvas-body">
+              <div class="d-flex flex-row">
+                <div class="dropdown col-6 mx-1">
+                  <button
+                    class="lang-btn form-select"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li class="lang-item">
+                      <a class="dropdown-item fs-13 text-start">
+                        <img
+                          value="ar"
+                          src="../assets/images/palestine.jpg"
+                          width="20px"
+                          alt=""
+                        />العربية</a
+                      >
+                    </li>
+                    <li class="lang-item">
+                      <a class="dropdown-item fs-13 text-start">
+                        <img
+                          value="en"
+                          src="../assets/images/palestine.jpg"
+                          width="20px"
+                          alt=""
+                        />
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <select class="form-select select-box mx-1">
+                  <option selected>الشيكل<span class="me-1">(₪)</span></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div
+                id="main-canvas-tab"
+                class="nav nav-tabs d-flex justify-content-center pt-3 border-bottom"
+                id="offcanvas-tabs"
+                role="tablist"
+              >
+                <div
+                  class="px-3 py-1 fs-13 active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#catogery"
+                  type="button"
+                  role="tab"
+                  aria-controls="catogery"
+                  aria-selected="true"
+                >
+                  التصنيفات
+                </div>
+                <div
+                  class="px-3 py-1 fs-13"
+                  data-bs-toggle="tab"
+                  data-bs-target="#brands"
+                  type="button"
+                  role="tab"
+                  aria-controls="brands"
+                  aria-selected="false"
+                >
+                  الماركات
+                </div>
+                <div
+                  class="px-3 py-1 fs-13"
+                  data-bs-toggle="tab"
+                  data-bs-target="#for-more"
+                  type="button"
+                  role="tab"
+                  aria-controls="for-more"
+                  aria-selected="false"
+                >
+                  المزيد
+                </div>
+              </div>
+              <div
+                id="main-canvas-tab-contant"
+                class="tab-content"
+                id="offcanvas-tabs-contant"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="catogery"
+                  role="tabpanel"
+                >
+                  <div class="d-flex flex-column">
+                    <div class="d-flex flex-column m-3 tabs">
+                      <div
+                        id="990"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id) "
+                      >
+                        لعب الاطفال
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="991"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id) "
+                      >
+                        الالكترونيات
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="993"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        اكسسوارات السيارات
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="994"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        الطاقة الشمسية
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="995"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        مستحضرات التجميل
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="992"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        ادوات رياضة
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img
+                        src="../assets/images/makeup.PNG"
+                        width="101"
+                        height="122"
+                        alt="ads"
+                      />
+                      <div>
+                        <p class="fs-14 color-b ms-3">
+                          خصومات المستحضرات التحميلية
+                        </p>
+                        <p class="fs-13 discount-color ms-3">خصم 50%</p>
+                        <button class="shop-now2 ms-3">تسوق الآن</button>
+                      </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                      <img
+                        src="../assets/images/electronics.PNG"
+                        width="101"
+                        height="122"
+                        alt="ads"
+                      />
+                      <div>
+                        <p class="fs-14 color-b ms-3">
+                          خصومات المستحضرات التحميلية
+                        </p>
+                        <p class="fs-13 discount-color ms-3">خصم 50%</p>
+                        <button class="shop-now2 ms-3">تسوق الآن</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="brands" role="tabpanel">
+                  <div
+                    class="d-flex flex-column justify-content-between align-items-center"
+                  >
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                          class="mt-3"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                      </div>
+                      <div class="col-4">
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                          class="mt-3"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                      </div>
+                      <div class="col-4">
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                          class="mt-3"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- <div class="d-flex flex-column justify-content-between align-items-center">
+        <div class="d-flex flex-row">
+        <div class="d-flex flex-column text-center" class="col-4 p-3">
+        <img src="../images/lacoste.jfif" alt="" >
+        Lacoste
+        </div>
+        <div class="d-flex flex-column text-center" class="col-4 p-3">
+        <img src="../images/lacoste.jfif" alt="" >
+        Lacoste
+        </div>
+        <div class="d-flex flex-column text-center" class="col-4 p-3">
+        <img src="../images/lacoste.jfif" alt="" >
+        Lacoste
+        </div>
+        </div> -->
+                </div>
+                <div class="tab-pane fade" id="for-more" role="tabpanel">
+                  <div class="d-flex flex-column m-3">
+                    <div
+                      id="170"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      سلة التسوق
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+                    <div
+                      id="172"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      المفضلة
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="172"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      مقارنة
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="173"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      حسابي
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="174"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      احدث المنتجات
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="175"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      عن المتجر <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="176"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      عروض وخصومات
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="990tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('990tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">لعب الاطفال</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13 tabs">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="991tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('991tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">الكترونيات</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13 tabs">
+                  <div
+                    id="180"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="182"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="182"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="183"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="992tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('992tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">ادوات</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13 tabs">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="993tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('993tab')" class="me-2 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">اكسسوارات سيارات</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13 tabs">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="994tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('994tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">طاقة شمسية</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13 tabs">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="995tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('995tab')" class="me-2 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">مستحضرات تجميل</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13 tabs">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="menu-text ms-3 text-center">القائمة</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/shpping-basket.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">سلة التسوق</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/favoruites.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">المفضلة</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/compare2.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">مقارنة</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/account.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">حسابي</p>
+        </div>
+      </div>
+    </header>
+    <!--header-->
+    <!-- navbar -->
+    <div class="container flex-wrap pt-3 navbar hide-navbar">
+      <div class="dropdown">
+        <button
+          class="btn fs-14 text-active fw-bold website-sections-menu px-3 py-2 mx-2 ms-xl-0 mb-3"
+          id="Sections"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img src="../assets/images/menu.svg" alt="menu" class="me-2" />
+          أقسام الموقع
+        </button>
+        <div class="dropdown-menu product-container" aria-labelledby="Sections">
+          <div class="row">
+            <div class="d-flex col-lg-8 col-md-9">
+              <div class="col-lg-3 col-md-3 ms-5">
+                <h1 class="fs-13 h1-color mt-5">لعب الاطفال</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+                <h1 class="fs-13 h1-color mt-5">إلكترونيات</h1>
+                <div class="d-flex">
+                  <ul class="fs-12">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <h1 class="fs-13 h1-color mt-5">اكسسوارات السيارات</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+                <h1 class="fs-13 h1-color mt-5">الطاقة الشمسية</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 margin-right">
+                <h1 class="fs-13 h1-color mt-5">مستحضرات التجميل</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+                <h1 class="fs-13 h1-color mt-5">أدوات رياضية</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-3 pe-5">
+              <div class="white-div">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img
+                    src="../assets/images/makeup.PNG"
+                    alt="makeup-img"
+                    class="mt-4 ms-3 pro-img"
+                  />
+                  <div class="d-flex flex-column ms-3 mt-4">
+                    <p class="fs-16" style="width: 170px">
+                      خصومات المستحضرات التحميلية
+                    </p>
+                    <p class="fs-25 sale-color">خصم 50%</p>
+                    <button class="shop-now me-3">تسوق الان</button>
+                  </div>
+                </div>
+              </div>
+              <div class="white-div">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img
+                    src="../assets/images/electronics.PNG"
+                    alt="electro-img"
+                    class="mt-4 ms-3 pro-img"
+                  />
+                  <div class="d-flex flex-column ms-3 mt-4">
+                    <p class="fs-16" style="width: 170px">
+                      كل جديد في عالم الإلكترونيات
+                    </p>
+                    <p class="fs-25 sale-color">خصم 50%</p>
+                    <button class="me-3 shop-now">تسوق الان</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="mx-2 mb-3">الرئيسية</a>
+      <a href="#" class="mx-2 mb-3">الكتب</a>
+      <a href="#" class="mx-2 mb-3">الأثاث</a>
+      <a href="#" class="mx-2 mb-3">الرياضة</a>
+      <a href="#" class="mx-2 mb-3">الموضة</a>
+      <a href="#" class="mx-2 mb-3">الألعاب</a>
+      <a href="#" class="mx-2 mb-3">المنتجات الرقمية</a>
+      <a href="#" class="mx-2 mb-3">بطاقات الهدايا</a>
+      <button
+        class="btn fs-14 px-3 py-2 mx-2 me-xl-0 mb-3 shopping-cart"
+        type="button"
+        dir="ltr"
+      >
+        <img src="../assets/images/shopping-cart.svg" alt="shopping cart" />
+        <span class="fw-bold mx-1">(0)</span>
+        ILS 0.00
+      </button>
+    </div>
+    <div class="w-100 d-lg-block linee" style="color: #cfcfcf"></div>
+    <!-- navbar -->
+    <!-- main -->
+    <div id="main">
+      <div
+        class="d-flex justify-content-center align-items-center header fs-14"
+      >
+        <span class="opacity-30">الرئيسية</span>
+        <span class="mx-2">/</span>
+        <span>المفضلة</span>
+      </div>
+    </div>
+    <!-- main -->
+    <section>
+      <div class="favorites">
+        <div class="container">
+          <div class="d-flex favourite-container">
+            <div class="d-block slider">
+              <div class="rectangle"></div>
+              <div class="firstClass">
+                <a href="./phone-collection.html"> كوليكشن الجوالات</a>
+                <i class="fa-solid fa-pencil ms-2"></i>
+                <div class="form-check me-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-block slider">
+              <div class="rectangle"></div>
+              <div class="secondClass">
+                <a href="">العاب الاطفال</a>
+                <i class="fa-solid fa-pencil ms-2"></i>
+                <div class="form-check me-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-block slider">
+              <div class="rectangle"></div>
+              <div class="thirdClass">
+                <a href="" class="ms-2">الإلكترونيات</a>
+                <i class="fa-solid fa-pencil ms-2"></i>
+                <div class="form-check me-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-block slider">
+              <div class="rectangle"></div>
+              <div class="forthClass">
+                <a href="" class="ms-2">اسم الكولكشن</a>
+                <i class="fa-solid fa-pencil ms-2"></i>
+                <div class="form-check me-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="d-block slider">
+              <div
+                class="dash-rectangle d-flex justify-content-center align-items-center opacity-70"
+              >
+                <div>
+                  <i class="fa-solid fa-circle-plus"></i>
+                  <div class="d-block">إضافة كوليكشن</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-footer">
+      <div class="border-top border-bottom pt-5 py-4 mt-5 row container-fluid">
+        <div class="col-lg col"></div>
+        <div class="col-12 col-lg-auto mb-4 p-r">
+          <div class="d-flex mb-2">
+            <img
+              src="../assets/images/logo.svg"
+              alt="logo"
+              class="footer-header-logo"
+            />
+            <div class="ms-2">
+              <div class="text-uppercase fw-bold text-395077 fs-14">
+                fratello store
+              </div>
+              <img
+                src="../assets/images/call_center.svg"
+                alt="Brands You Need"
+              />
+            </div>
+          </div>
+          <div class="text-wrap footer-long-text">
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+            النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+            من النصوص الأخرى إضافة إلى زيادة عدد
+          </div>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4 p-r">
+          <div class="fs-16 footer-header mb-4">معلومات</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4">
+          <div class="fs-16 footer-header mb-4">حسابي</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4 p-r">
+          <div class="fs-16 footer-header mb-4">خدمة العملاء</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4">
+          <div class="fs-16 footer-header mb-4">روابط مساعدة</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-12 col-lg-auto mb-4 p-r">
+          <div class="fs-16 footer-header mb-4">تواصل معنا</div>
+          <a href="#" class="footer-link"
+            >العنوان: دوار المنارة، رام الله، فلسطين</a
+          >
+          <a href="#" class="footer-link">0123-456-789</a>
+          <a href="#" class="footer-link">support@abismail.com</a>
+          <a href="#"
+            ><img
+              src="../assets/images/facebook.svg"
+              alt="facebook"
+              class="footer-facebook me-2"
+          /></a>
+          <a href="#"
+            ><img
+              src="../assets/images/twitter.svg"
+              alt="twitter"
+              class="footer-twitter"
+          /></a>
+        </div>
+        <div class="col-lg"></div>
+      </div>
+      <div
+        class="d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap mt-4 container"
+      >
+        <div class="footer-header fs-14 mx-2 mx-sm-0 mb-4">
+          جميع الحقوق محفوظة &copy; 2022
+        </div>
+        <div class="d-flex mx-2 mx-sm-0 mb-4">
+          <img src="../assets/images/visa.svg" alt="visa" class="me-3" />
+          <img src="../assets/images/paypal.svg" alt="paypal" class="me-3" />
+          <img
+            src="../assets/images/mastercard.svg"
+            alt="mastercard"
+            class="me-3"
+          />
+          <img src="../assets/images/western-union.svg" alt="western union" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="../bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0bc6d6359c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../assets/js/index.js"></script>
+  </body>
+</html>

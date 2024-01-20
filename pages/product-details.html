@@ -1,0 +1,3091 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <title>Fratello Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+    <!-- Ar --->
+    <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.rtl.min.css"
+    />
+    <!---En--->
+    <!-- <link
+      rel="stylesheet"
+      href="../bootstrap-5.2.0-beta1-dist/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/product-details.css" />
+    <!--English styles-->
+    <!-- <link rel="stylesheet" href="../styles/styles-en.css" /> -->
+  </head>
+
+  <body>
+    <!--header-->
+    <header class="bg-white border-bottom">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <!-- Logo and search in navbar-->
+          <!--Logo in arabic page web-->
+          <img
+            class="img-fluid mb-3 me-4 ar-logo"
+            src="../assets/images/Group 37743.svg"
+            width="169"
+            height="43"
+          />
+          <!-- logo arabic page web-->
+          <div class="mb-3 justify-content-center en-logo">
+            <img
+              src="../assets/images/logo.svg"
+              alt="logo"
+              class="header-logo"
+              width="43"
+              height="43"
+            />
+            <div class="me-3">
+              <div class="text-uppercase fw-bold text-395077 fs-14">
+                fratello store
+              </div>
+              <img
+                src="../assets/images/call_center.svg"
+                alt="Brands You Need"
+              />
+            </div>
+          </div>
+          <div class="flex-grow-1 mb-3 hide-search">
+            <div class="d-flex">
+              <input
+                class="form-control fs-14 border-0 search rounded-end-0 p-3"
+                type="text"
+                placeholder="البحث..."
+                id="search"
+                name="search"
+              />
+              <div
+                class="d-flex justify-content-center align-items-center p-3 border-0 search rounded-start-0 hide-btn"
+              >
+                <button type="button " class="btn p-0 box-shadow-none">
+                  <img src="../assets/images/search.svg" alt="search" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--Logo in mobile arabic and english-->
+          <a class="resp-logo d-lg-none me-2" href="#"
+            ><img
+              class="img-fluid"
+              src="../assets/images/logo.svg"
+              width="43"
+              height="43"
+          /></a>
+          <!--Responsive Search-->
+          <div class="flex-grow-1 d-lg-none">
+            <div class="d-flex position-relative">
+              <input
+                class="form-control fs-12 search"
+                type="text"
+                placeholder="ابحث عن منتج"
+                id="search"
+                name="search"
+              />
+              <div class="d-flex position-absolute search-position mt-1">
+                <button
+                  type="button "
+                  class="btn search-btn d-flex justify-content-center align-items-center mx-2"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="collapse navbar-collapse justify-content-end mb-3 ms-4"
+            id="navbarNavDropdown"
+          >
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/compare.svg"
+                alt="compare"
+                width="20"
+                height="20"
+              />
+            </a>
+            <a href="./favorites.html" class="mx-2">
+              <img
+                src="../assets/images/icon-heart.svg"
+                alt="favorites"
+                width="20"
+                height="18"
+              />
+            </a>
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/bell.svg"
+                alt="notifications"
+                width="25"
+                height="25"
+              />
+            </a>
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/globe.png"
+                alt="globe"
+                width="20"
+                height="24"
+              />
+            </a>
+            <a href="#" class="mx-2">
+              <img
+                src="../assets/images/temp-avatar.svg"
+                alt="profile"
+                width="42"
+                height="42"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--Responsive menu-->
+      <div class="d-flex d-lg-none container-fluid justify-content-evenly">
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <button
+            class="shadow-0 border-0 bg-color"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasExample"
+          >
+            <img
+              src="../assets/images/menu2.PNG"
+              alt="menu2"
+              width="40"
+              height="40"
+              class="ms-3"
+            />
+          </button>
+          <!--ofcanvas starts-->
+          <div
+            class="offcanvas offcanvas-start"
+            style="z-index: 1000000"
+            tabindex="-1"
+            id="offcanvasRight"
+            aria-labelledby="offcanvasRightLabel"
+          >
+            <div class="offcanvas-body">
+              <div class="d-flex flex-row">
+                <div class="dropdown col-6 mx-1">
+                  <button
+                    class="lang-btn form-select"
+                    type="button"
+                    id="dropdownMenuButton1"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  ></button>
+                  <ul
+                    class="dropdown-menu"
+                    aria-labelledby="dropdownMenuButton1"
+                  >
+                    <li class="lang-item">
+                      <a class="dropdown-item fs-13 text-start">
+                        <img
+                          value="ar"
+                          src="../assets/images/palestine.jpg"
+                          width="20px"
+                          alt=""
+                        />العربية</a
+                      >
+                    </li>
+                    <li class="lang-item">
+                      <a class="dropdown-item fs-13 text-start">
+                        <img
+                          value="en"
+                          src="../assets/images/palestine.jpg"
+                          width="20px"
+                          alt=""
+                        />
+                        English
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <select class="form-select select-box mx-1">
+                  <option selected>الشيكل<span class="me-1">(₪)</span></option>
+                  <option value="1">One</option>
+                  <option value="2">Two</option>
+                  <option value="3">Three</option>
+                </select>
+              </div>
+              <div
+                id="main-canvas-tab"
+                class="nav nav-tabs d-flex justify-content-center pt-3 border-bottom"
+                id="offcanvas-tabs"
+                role="tablist"
+              >
+                <div
+                  class="px-3 py-1 fs-13 active"
+                  data-bs-toggle="tab"
+                  data-bs-target="#catogery"
+                  type="button"
+                  role="tab"
+                  aria-controls="catogery"
+                  aria-selected="true"
+                >
+                  التصنيفات
+                </div>
+                <div
+                  class="px-3 py-1 fs-13"
+                  data-bs-toggle="tab"
+                  data-bs-target="#brands"
+                  type="button"
+                  role="tab"
+                  aria-controls="brands"
+                  aria-selected="false"
+                >
+                  الماركات
+                </div>
+                <div
+                  class="px-3 py-1 fs-13"
+                  data-bs-toggle="tab"
+                  data-bs-target="#for-more"
+                  type="button"
+                  role="tab"
+                  aria-controls="for-more"
+                  aria-selected="false"
+                >
+                  المزيد
+                </div>
+              </div>
+              <div
+                id="main-canvas-tab-contant"
+                class="tab-content"
+                id="offcanvas-tabs-contant"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="catogery"
+                  role="tabpanel"
+                >
+                  <div class="d-flex flex-column">
+                    <div class="d-flex flex-column m-3">
+                      <div
+                        id="990"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        لعب الاطفال
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="991"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        الالكترونيات
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="993"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        اكسسوارات السيارات
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="994"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        الطاقة الشمسية
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="995"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        مستحضرات التجميل
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                      <div
+                        id="992"
+                        class="fs-13 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                        onclick="openCategory(id)"
+                      >
+                        ادوات رياضة
+                        <i class="fa-solid fa-angle-left hidden-ar"></i>
+                        <i class="fa-solid fa-angle-right hidden-an"></i>
+                      </div>
+                    </div>
+                    <div class="d-flex mt-4">
+                      <img
+                        src="../assets/images/makeup.PNG"
+                        width="101"
+                        height="122"
+                        alt="ads"
+                      />
+                      <div>
+                        <p class="fs-14 color-b ms-3">
+                          خصومات المستحضرات التحميلية
+                        </p>
+                        <p class="fs-13 discount-color ms-3">خصم 50%</p>
+                        <button class="shop-now2 ms-3">تسوق الآن</button>
+                      </div>
+                    </div>
+                    <div class="d-flex mt-3">
+                      <img
+                        src="../assets/images/electronics.PNG"
+                        width="101"
+                        height="122"
+                        alt="ads"
+                      />
+                      <div>
+                        <p class="fs-14 color-b ms-3">
+                          خصومات المستحضرات التحميلية
+                        </p>
+                        <p class="fs-13 discount-color ms-3">خصم 50%</p>
+                        <button class="shop-now2 ms-3">تسوق الآن</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="brands" role="tabpanel">
+                  <div
+                    class="d-flex flex-column justify-content-between align-items-center"
+                  >
+                    <div class="row">
+                      <div class="col-4">
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                          class="mt-3"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                      </div>
+                      <div class="col-4">
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                          class="mt-3"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                      </div>
+                      <div class="col-4">
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                          class="mt-3"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                        <img
+                          src="../assets/images/lacoste.jfif "
+                          width="80"
+                          height="80"
+                        />
+                        <p class="ms-3 fs-15 mt-1">Lacoste</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="for-more" role="tabpanel">
+                  <div class="d-flex flex-column m-3">
+                    <div
+                      id="170"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      سلة التسوق
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+                    <div
+                      id="172"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      المفضلة
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="172"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      مقارنة
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="173"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      حسابي
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="174"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      احدث المنتجات
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="175"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      عن المتجر <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                    <div class="w-100 border-bottom"></div>
+
+                    <div
+                      id="176"
+                      class="fs-13 pt-4 p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                      onclick="openCategory(id)"
+                    >
+                      عروض وخصومات
+                      <i class="fa-solid fa-angle-left hidden-ar"></i>
+                      <i class="fa-solid fa-angle-right hidden-an"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="990tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('990tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">لعب الاطفال</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="991tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('991tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">الالكترونيات</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13">
+                  <div
+                    id="180"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="182"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="182"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="183"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="992tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('992tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">ادوات</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="993tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('993tab')" class="me-2 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">اكسسوارات سيارات</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="994tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('994tab')" class="me-5 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">طاقة شمسية</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+              <div id="995tab" class="d-none">
+                <div class="nav nav-tabs d-flex pt-4 border-bottom">
+                  <div onclick="backBtn('995tab')" class="me-2 back">
+                    <i class="fa-solid fa-angle-right me-1 hidden-ar"></i>
+                    <i class="fa-solid fa-angle-left me-1 hidden-an"></i>
+                    رجوع
+                  </div>
+                  <div class="active ms-5">مستحضرات تجميل</div>
+                </div>
+                <div class="d-flex flex-column m-3 fs-13">
+                  <div
+                    id="190"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="192"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                  <div
+                    id="193"
+                    class="p-2 rounded-3 d-flex flex-row justify-content-between align-items-center border-3 mb-3 sub-tab-selected"
+                    onclick="openCategory(id)"
+                  >
+                    تصنيف فرعي
+                    <i class="fa-solid fa-angle-left hidden-ar"></i>
+                    <i class="fa-solid fa-angle-right hidden-an"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p class="menu-text ms-3 text-center">القائمة</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/shpping-basket.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">سلة التسوق</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/favoruites.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">المفضلة</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 border-left justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/compare2.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">مقارنة</p>
+        </div>
+        <div
+          class="d-flex flex-column my-3 pe-3 justify-content-center align-items-center flex-grow-1"
+        >
+          <img
+            src="../assets/images/account.PNG"
+            alt="menu2"
+            width="40"
+            height="40"
+            class="ms-3"
+          />
+          <p class="menu-text ms-2 text-center">حسابي</p>
+        </div>
+      </div>
+    </header>
+    <!--header-->
+    <!-- navbar -->
+    <div class="container flex-wrap pt-3 navbar hide-navbar">
+      <div class="dropdown">
+        <button
+          class="btn fs-14 text-active fw-bold website-sections-menu px-3 py-2 mx-2 ms-xl-0 mb-3"
+          id="Sections"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img src="../assets/images/menu.svg" alt="menu" class="me-2" />
+          أقسام الموقع
+        </button>
+        <div class="dropdown-menu product-container" aria-labelledby="Sections">
+          <div class="row">
+            <div class="d-flex col-lg-8 col-md-9">
+              <div class="col-lg-3 col-md-3 ms-5">
+                <h1 class="fs-13 h1-color mt-5">لعب الاطفال</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+                <h1 class="fs-13 h1-color mt-5">إلكترونيات</h1>
+                <div class="d-flex">
+                  <ul class="fs-12">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3">
+                <h1 class="fs-13 h1-color mt-5">اكسسوارات السيارات</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+                <h1 class="fs-13 h1-color mt-5">الطاقة الشمسية</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 margin-right">
+                <h1 class="fs-13 h1-color mt-5">مستحضرات التجميل</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+                <h1 class="fs-13 h1-color mt-5">أدوات رياضية</h1>
+                <div class="d-flex">
+                  <ul>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                  </ul>
+                  <ul class="ms-5">
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="fs-12">تصنيف فرعي</li>
+                    <li class="border-btm fs-12">شاهد الكل</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-3 pe-5">
+              <div class="white-div">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img
+                    src="../assets/images/makeup.PNG"
+                    alt="makeup-img"
+                    class="mt-4 ms-3 pro-img"
+                  />
+                  <div class="d-flex flex-column ms-3 mt-4">
+                    <p class="fs-16" style="width: 170px">
+                      خصومات المستحضرات التحميلية
+                    </p>
+                    <p class="fs-25 sale-color">خصم 50%</p>
+                    <button class="shop-now me-3">تسوق الان</button>
+                  </div>
+                </div>
+              </div>
+              <div class="white-div">
+                <div class="d-flex justify-content-center align-items-center">
+                  <img
+                    src="../assets/images/electronics.PNG"
+                    alt="electro-img"
+                    class="mt-4 ms-3 pro-img"
+                  />
+                  <div class="d-flex flex-column ms-3 mt-4">
+                    <p class="fs-16" style="width: 170px">
+                      كل جديد في عالم الإلكترونيات
+                    </p>
+                    <p class="fs-25 sale-color">خصم 50%</p>
+                    <button class="me-3 shop-now">تسوق الان</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a href="#" class="mx-2 mb-3">الرئيسية</a>
+      <a href="#" class="mx-2 mb-3">الكتب</a>
+      <a href="#" class="mx-2 mb-3">الأثاث</a>
+      <a href="#" class="mx-2 mb-3">الرياضة</a>
+      <a href="#" class="mx-2 mb-3">الموضة</a>
+      <a href="#" class="mx-2 mb-3">الألعاب</a>
+      <a href="#" class="mx-2 mb-3">المنتجات الرقمية</a>
+      <a href="#" class="mx-2 mb-3">بطاقات الهدايا</a>
+      <button
+        class="btn fs-14 px-3 py-2 mx-2 me-xl-0 mb-3 shopping-cart"
+        type="button"
+        dir="ltr"
+      >
+        <img src="../assets/images/shopping-cart.svg" alt="shopping cart" />
+        <span class="fw-bold mx-1">(0)</span>
+        ILS 0.00
+      </button>
+    </div>
+    <div class="w-100 d-lg-block linee" style="color: #cfcfcf"></div>
+    <!-- navbar -->
+    <!-- main -->
+    <div id="main">
+      <div class="d-flex justify-content-center align-items-center header">
+        <span class="opacity-30">الرئيسية</span>
+        <span class="mx-2">/</span>
+        تفاصيل المنتج
+      </div>
+    </div>
+
+    <div class="container-lg container">
+      <div class="row">
+        <div class="row col-12 col-lg-9">
+          <div class="col-12 col-lg-5 big-img">
+            <img
+              src="../assets/images/Rectangle 55.png"
+              alt="big-img"
+              id="expandedImg"
+              width="100%"
+            />
+            <div
+              class="d-flex ecommerce-gallery flex-row flex-wrap mt-4 row justify-content-center"
+              data-mdb-activation="mouseenter"
+            >
+              <img
+                src="../assets/images/_0053_rgb_MP582-RGB-bttm_V2@2x.png"
+                alt=""
+                class="img-fluid parent-rectangle me-1"
+                onclick="myFunction(this);"
+              />
+              <img
+                src="../assets/images/_0066_rgb_MNEN2-RGB-side_V2@2x.png"
+                alt=""
+                class="img-fluid parent-rectangle me-1"
+                onclick="myFunction(this);"
+              />
+              <img
+                src="../assets/images/Rectangle 55.png"
+                alt=""
+                class="img-fluid parent-rectangle me-1 active"
+                onclick="myFunction(this); "
+                id="defaultOpenn"
+              />
+              <img
+                src="../assets/images/151101_bbd_sodc_blk_06@2x.png"
+                alt=""
+                class="img-fluid parent-rectangle me-1"
+                onclick="myFunction(this);"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-7 beats">
+            <div class="d-flex mb-3">
+              <img
+                src="../assets/images/Beats_Electronics_logo.svg.png"
+                alt="beats-logo"
+                height="35"
+                width="35"
+              />
+              <p class="mt-1 ms-3 fs-16" style="font-weight: 350">BEATS</p>
+            </div>
+            <p class="fs-24 p-color">Beats Solo2 On Ear Headphones - Black</p>
+            <div class="d-flex line">
+              <div class="rate one mt-1 me-1">
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 stars</label>
+                <input
+                  type="radio"
+                  id="star2"
+                  name="rate"
+                  value="2"
+                  checked=""
+                />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 star</label>
+              </div>
+              <p class="mt-2 p2-color fs-14">التقييمات</p>
+              <p class="mt-2 ms-1 p2-color fs-14">0</p>
+              <a
+                href=""
+                class="evaluate-product fs-14 mt-2 ms-2"
+                data-bs-toggle="modal"
+                data-bs-target="#imge-modal"
+                >قيم المنتج</a
+              >
+            </div>
+            <div class="d-flex justify-content-between mt-2 line">
+              <div class="d-flex">
+                <p class="new-price fs-22">ILS 499</p>
+                <p class="old-price ms-4 fs-22">ILS 599</p>
+              </div>
+              <p class="fs-20 number">SKU :698718652k</p>
+            </div>
+            <div class="d-flex colorss">
+              <p class="fs-14 avilable mt-4">اختر اللون :</p>
+              <input
+                class="choice-item-color mr-17 ms-4"
+                type="radio"
+                name="color"
+                style="
+                  background-color: #006cff;
+                  box-shadow: 0 0 0 1px rgba(0, 108, 255, 0.5);
+                "
+                checked
+              />
+              <input
+                class="choice-item-color mr-17"
+                type="radio"
+                name="color"
+                style="
+                  box-shadow: 0 0 0 1px rgba(252, 62, 57, 0.5);
+                  background-color: #fc3e39;
+                "
+              />
+              <input
+                class="choice-item-color mr-17"
+                type="radio"
+                name="color"
+                style="
+                  box-shadow: 0 0 0 1px rgba(23, 23, 23, 0.5);
+                  background-color: #171717;
+                "
+              />
+              <input
+                class="choice-item-color mr-17"
+                type="radio"
+                name="color"
+                style="
+                  box-shadow: 0 0 0 1px rgba(255, 246, 0, 0.5);
+                  background-color: #fff600;
+                "
+              />
+            </div>
+            <div class="d-flex">
+              <p class="fs-14 avilable mt-4">اختر الحجم :</p>
+              <select
+                class="form-select avialble-right3 fs-14 mt-3 ms-4"
+                aria-label=""
+              >
+                <option selected>XS</option>
+                <option value="1">S</option>
+                <option value="2">M</option>
+                <option value="3">L</option>
+              </select>
+            </div>
+            <div class="d-flex line">
+              <p class="fs-14 avilable mt-4">إختر النقش:</p>
+              <label class="ms-4">
+                <input
+                  type="radio"
+                  name="test"
+                  value="small"
+                  checked
+                  class="hidden"
+                />
+                <img src="../assets/images/engraving.PNG" alt="Option 1" />
+              </label>
+              <label>
+                <input type="radio" name="test" value="small2" class="hidden" />
+                <img src="../assets/images/engraving.PNG" alt="Option 2" />
+              </label>
+              <label>
+                <input type="radio" name="test" value="small3" class="hidden" />
+                <img src="../assets/images/engraving.PNG" alt="Option 3" />
+              </label>
+              <label>
+                <input type="radio" name="test" value="small4" class="hidden" />
+                <img src="../assets/images/engraving.PNG" alt="Option 4" />
+              </label>
+            </div>
+            <div>
+              <div class="d-flex mt-4 justify-content-evenly pb-4">
+                <div
+                  class="d-flex justify-content-around align-items-center wrapper"
+                >
+                  <span class="plus"
+                    ><img src="../assets/images/Group 27.png"
+                  /></span>
+                  <span class="num" id="computerScore">2</span>
+                  <span class="minus"
+                    ><img src="../assets/images/Rectangle 11 copy 3.png"
+                  /></span>
+                </div>
+                <div>
+                  <button type="button" class="basket-btn fs-14">
+                    <img src="../assets/images/cart_2.png" /> أضف للسلة
+                  </button>
+                  <button type="button" class="favorite-btn fs-14 ms-2">
+                    <img src="../assets/images/Group 10037.png" />
+                  </button>
+                  <button type="button" class="favorite-btn fs-14 ms-2">
+                    <img src="../assets/images/hearts.svg" />
+                  </button>
+                  <button type="button" class="favorite-btn fs-14 ms-2">
+                    <img src="../assets/images/Mail.png" />
+                  </button>
+                </div>
+              </div>
+              <div class="line number fs-14 d-flex">
+                <div class="me-1">الكمية المتوفرة :</div>
+                <div>200</div>
+              </div>
+            </div>
+          </div>
+          <div class="product-info">
+            <!--Code tabs should write here -->
+            <div class="line-botom">
+              <button
+                class="tablinks fs-16 ms-3 mt-4 active"
+                id="defaultOpennn"
+                onclick="openTab(event, 'product-info')"
+              >
+                معلومات المنتج
+              </button>
+              <button
+                class="tablinks fs-16 ms-5 mt-4"
+                onclick="openTab(event, 'rating')"
+              >
+                التقييمات
+              </button>
+            </div>
+            <div id="product-info" class="tabcontent">
+              <p class="mt-4 ms-3 fs-14">
+                هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                التطبيق
+              </p>
+              <p class="ms-3 fs-14">
+                إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى
+                زيادة عدد الفقرات كما تريد، النص لن يبدو مقسما ولا يحوي أخطاء
+                لغوية، مولد النص العربى مفيد لمصممي المواقع على وجه الخصوص، حيث
+                يحتاج العميل فى كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                الموقع.
+              </p>
+              <p class="ms-3 fs-14">
+                من هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم ليظهر
+                للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر على المصمم عناء
+                البحث عن نص بديل لا علاقة له بالموضوع الذى يتحدث عنه التصميم
+                فيظهر بشكل لا يليق. هذا النص يمكن أن يتم تركيبه على أي تصميم دون
+                مشكلة فلن يبدو وكأنه نص منسوخ، غير منظم، غير منسق، أو حتى غير
+                مفهوم.
+              </p>
+            </div>
+            <div id="rating" class="tabcontent">
+              <div class="row">
+                <div class="col-3 col-lg-3 border-left">
+                  <div class="rate-circle">
+                    <p class="inner fw-bolder fs-30">4.0</p>
+                    <p class="inner pt-2 fs-13">تقييم(139)</p>
+                  </div>
+                  <div class="rate two fs-20 me-5 mt-2">
+                    <input type="radio" id="star1.2" name="rate1" value="1" />
+                    <label for="star1.2" title="text">1 stars</label>
+                    <input
+                      type="radio"
+                      id="star2.2"
+                      name="rate2"
+                      value="2"
+                      checked=""
+                    />
+                    <label for="star2.2" title="text">2 stars</label>
+                    <input type="radio" id="star3.3" name="rate3" value="3" />
+                    <label for="star3.3" title="text">3 stars</label>
+                    <input type="radio" id="star4.4" name="rate4" value="4" />
+                    <label for="star4.4" title="text">4 stars</label>
+                    <input type="radio" id="star5.5" name="rate5" value="5" />
+                    <label for="star5.5" title="text">5 star</label>
+                  </div>
+                  <div class="form-check mt-4 ms-3 fs-14">
+                    <input
+                      class="form-check-input change"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                      checked
+                    />
+                    <label
+                      class="form-check-label lable2"
+                      for="flexCheckDefault"
+                    >
+                      كل التقييمات
+                    </label>
+                  </div>
+                  <div class="form-check mt-3 ms-3 fs-14">
+                    <input
+                      class="form-check-input change"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label
+                      class="form-check-label lable2"
+                      for="flexCheckChecked"
+                    >
+                      مع صور فقط
+                    </label>
+                  </div>
+                  <div class="form-check mt-5 ms-3 fs-14">
+                    <input
+                      class="form-check-input check-box-3 mt-3"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <div class="rate2">
+                        <input
+                          type="radio"
+                          id="star11.1"
+                          name="rate11.1"
+                          value="1"
+                          checked
+                        />
+                        <label for="star11.2" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star11.2"
+                          name="rate11.2"
+                          value="2"
+                        />
+                        <label for="star11.2" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star11.3"
+                          name="rate11.3"
+                          value="3"
+                        />
+                        <label for="star11.3" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star11.4"
+                          name="rate11.4"
+                          value="4"
+                        />
+                        <label for="star11.4" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star11.5"
+                          name="rate11.5"
+                          value="5"
+                        />
+                        <label for="star11.5" title="text">5 star</label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check ms-3 fs-14">
+                    <input
+                      class="form-check-input mt-3 check-box-3"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <div class="rate2">
+                        <input
+                          type="radio"
+                          id="star12.1"
+                          name="rate12.1"
+                          value="1"
+                        />
+                        <label for="star12.1" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star12.2"
+                          name="rate12.2"
+                          value="2"
+                          checked
+                        />
+                        <label for="star12.2" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star12.3"
+                          name="rate12.3"
+                          value="3"
+                        />
+                        <label for="star12.3" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star12.4"
+                          name="rate12.4"
+                          value="4"
+                        />
+                        <label for="star12.4" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star12.5"
+                          name="rate12.5"
+                          value="5"
+                        />
+                        <label for="star12.5" title="text">5 star</label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check ms-3 fs-14">
+                    <input
+                      class="form-check-input mt-3 check-box-3"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <div class="rate2">
+                        <input
+                          type="radio"
+                          id="star13.1"
+                          name="rate13.1"
+                          value="1"
+                        />
+                        <label for="star13.1" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star13.2"
+                          name="rate13.2"
+                          value="2"
+                        />
+                        <label for="star13.2" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star13.3"
+                          name="rate13.3"
+                          value="3"
+                          checked
+                        />
+                        <label for="star13.3" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star13.4"
+                          name="rate13.4"
+                          value="4"
+                        />
+                        <label for="star13.4" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star13.5"
+                          name="rate13.5"
+                          value="5"
+                        />
+                        <label for="star13.5" title="text">5 star</label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check ms-3 fs-14">
+                    <input
+                      class="form-check-input mt-3 check-box-3"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <div class="rate2">
+                        <input
+                          type="radio"
+                          id="star14.1"
+                          name="rate14.1"
+                          value="1"
+                        />
+                        <label for="star14.1" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star14.2"
+                          name="rate14.2"
+                          value="2"
+                        />
+                        <label for="star14.2" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star14.3"
+                          name="rate14.3"
+                          value="3"
+                        />
+                        <label for="star14.3" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star14.4"
+                          name="rate14.4"
+                          value="4"
+                          checked
+                        />
+                        <label for="star14.4" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star14.5"
+                          name="rate14.5"
+                          value="5"
+                        />
+                        <label for="star14.5" title="text">5 star</label>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="form-check ms-3 fs-14">
+                    <input
+                      class="form-check-input mt-3 check-box-3"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      <div class="rate2">
+                        <input
+                          type="radio"
+                          id="star15.1"
+                          name="rate15.1"
+                          value="1"
+                        />
+                        <label for="star15.1" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star15.2"
+                          name="rate15.2"
+                          value="2"
+                        />
+                        <label for="star15.2" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star15.3"
+                          name="rate15.3"
+                          value="3"
+                        />
+                        <label for="star15.3" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star15.4"
+                          name="rate15.4"
+                          value="4"
+                        />
+                        <label for="star15.4" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star15.5"
+                          name="rate15.5"
+                          value="5"
+                          checked
+                        />
+                        <label for="star15.5" title="text">5 star</label>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-9 col-lg-9">
+                  <div class="d-flex">
+                    <div>
+                      <p class="fs-18 customer-name">أحمد بسام</p>
+                      <div class="rate3 two">
+                        <input
+                          type="radio"
+                          id="star1.222"
+                          name="rate1.222"
+                          value="1"
+                        />
+                        <label for="star1.222" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star2.222"
+                          name="rate2.222"
+                          value="2"
+                          checked=""
+                        />
+                        <label for="star2.222" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star3.332"
+                          name="rate3.332"
+                          value="3"
+                        />
+                        <label for="star3.332" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star4.442"
+                          name="rate4.442"
+                          value="4"
+                        />
+                        <label for="star4.442" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star5.552"
+                          name="rate5.552"
+                          value="5"
+                        />
+                        <label for="star5.552" title="text">5 star</label>
+                      </div>
+                    </div>
+                    <div class="white-div">
+                      <div class="d-flex">
+                        <p class="fs-14 pw-c">
+                          من هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم
+                          ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
+                          على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                          الذي يتحدث عنه
+                        </p>
+                        <img
+                          src="../assets/images/remote.PNG"
+                          alt="product"
+                          height="126px"
+                          width="124px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div>
+                      <p class="fs-18 customer-name">أحمد بسام</p>
+                      <div class="rate3 two">
+                        <input
+                          type="radio"
+                          id="star1.223"
+                          name="rate1.223"
+                          value="1"
+                        />
+                        <label for="star1.223" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star2.223"
+                          name="rate2.223"
+                          value="2"
+                          checked=""
+                        />
+                        <label for="star2.223" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star3.333"
+                          name="rate3.333"
+                          value="3"
+                        />
+                        <label for="star3.333" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star4.443"
+                          name="rate4.443"
+                          value="4"
+                        />
+                        <label for="star4.443" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star5.553"
+                          name="rate5.553"
+                          value="5"
+                        />
+                        <label for="star5.553" title="text">5 star</label>
+                      </div>
+                    </div>
+                    <div class="white-div">
+                      <div class="d-flex">
+                        <p class="fs-14 pw-c">
+                          من هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم
+                          ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
+                          على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                          الذي يتحدث عنه
+                        </p>
+                        <img
+                          src="../assets/images/remote.PNG"
+                          alt="product"
+                          height="126px"
+                          width="124px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex">
+                    <div>
+                      <p class="fs-18 customer-name">أحمد بسام</p>
+                      <div class="rate3 two">
+                        <input
+                          type="radio"
+                          id="star1.224"
+                          name="rate1.224"
+                          value="1"
+                        />
+                        <label for="star1.224" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star2.224"
+                          name="rate2.224"
+                          value="2"
+                          checked=""
+                        />
+                        <label for="star2.224" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star3.334"
+                          name="rate3.334"
+                          value="3"
+                        />
+                        <label for="star3.334" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star4.444"
+                          name="rate4.444"
+                          value="4"
+                        />
+                        <label for="star4.444" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star5.554"
+                          name="rate5.554"
+                          value="5"
+                        />
+                        <label for="star5.554" title="text">5 star</label>
+                      </div>
+                    </div>
+                    <div class="white-div">
+                      <div class="d-flex">
+                        <p class="fs-14 pw-c">
+                          من هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم
+                          ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
+                          على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                          الذي يتحدث عنه
+                        </p>
+                        <img
+                          src="../assets/images/remote.PNG"
+                          alt="product"
+                          height="126px"
+                          width="124px"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="d-flex mb-5">
+                    <div>
+                      <p class="fs-18 customer-name">أحمد بسام</p>
+                      <div class="rate3 two">
+                        <input
+                          type="radio"
+                          id="star1.22"
+                          name="rate1.22"
+                          value="1"
+                        />
+                        <label for="star1.22" title="text">1 stars</label>
+                        <input
+                          type="radio"
+                          id="star2.22"
+                          name="rate2.22"
+                          value="2"
+                          checked=""
+                        />
+                        <label for="star2.22" title="text">2 stars</label>
+                        <input
+                          type="radio"
+                          id="star3.33"
+                          name="rate3.33"
+                          value="3"
+                        />
+                        <label for="star3.33" title="text">3 stars</label>
+                        <input
+                          type="radio"
+                          id="star4.44"
+                          name="rate4.44"
+                          value="4"
+                        />
+                        <label for="star4.44" title="text">4 stars</label>
+                        <input
+                          type="radio"
+                          id="star5.55"
+                          name="rate5.55"
+                          value="5"
+                        />
+                        <label for="star5.55" title="text">5 star</label>
+                      </div>
+                    </div>
+                    <div class="white-div">
+                      <div class="d-flex">
+                        <p class="fs-14 pw-c">
+                          من هنا وجب على المصمم أن يضع نصوصا مؤقتة على التصميم
+                          ليظهر للعميل الشكل كاملاً،دور مولد النص العربى أن يوفر
+                          على المصمم عناء البحث عن نص بديل لا علاقة له بالموضوع
+                          الذى يتحدث عنه التصميم فيظهر بشكل لا يليق. ومن هنا وجب
+                          على المصمم أن يضع نصوصا
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-3 col-lg-3 d-lg-block d-none">
+          <div class="d-flex mb-4 icons">
+            <button class="mail">
+              <img src="../assets/images/Path 2145.png" />
+            </button>
+            <button class="gmail">
+              <img src="../assets/images/Path 2143.png" />
+            </button>
+            <button class="linked-in">
+              <img src="../assets/images/icon-linkedin.png" />
+            </button>
+            <button class="tw">
+              <img src="../assets/images/twitter.png" />
+            </button>
+            <button class="fb">
+              <img src="../assets/images/facebook.png" />
+            </button>
+          </div>
+          <p class="fs-18 p2-color">مساحة اعلانية</p>
+          <img
+            src="../assets/images/Group 36559.png"
+            width="257px"
+            height="855px"
+            class="mt-4"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="d-flex justify-content-center">
+        <span class="products fs-18 p-color mt-6 mb-5 fw-bold"
+          >منتجات ذات صلة</span
+        >
+      </div>
+      <section class="slider-container position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="swiper card_slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/ipad.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-1"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn text center">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="tags">
+                      <div
+                        class="new d-flex justify-content-center align-items-center pt-2"
+                      >
+                        جديد
+                      </div>
+                      <div
+                        class="sale d-flex justify-content-center align-items-center"
+                        dir="ltr"
+                      >
+                        -6%
+                      </div>
+                    </div>
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/watch.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-2"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/laptop.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-3"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/50061505_575246.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-4"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="tags">
+                      <div
+                        class="new d-flex justify-content-center align-items-center pt-2"
+                      >
+                        جديد
+                      </div>
+                      <div
+                        class="sale d-flex justify-content-center align-items-center"
+                        dir="ltr"
+                      >
+                        -6%
+                      </div>
+                    </div>
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/watch.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-2"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="tags">
+                      <div
+                        class="new d-flex justify-content-center align-items-center pt-2"
+                      >
+                        جديد
+                      </div>
+                      <div
+                        class="sale d-flex justify-content-center align-items-center"
+                        dir="ltr"
+                      >
+                        -6%
+                      </div>
+                    </div>
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/watch.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-2"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div>
+      <div class="d-flex justify-content-center">
+        <span class="products fs-18 p-color mt-5 mb-5 fw-bold"
+          >قد يعجبك أيضا</span
+        >
+      </div>
+      <section class="slider-container position-relative">
+        <div class="container">
+          <div class="row">
+            <div class="swiper card_slider2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/ipad.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-1"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn text center">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="tags">
+                      <div
+                        class="new d-flex justify-content-center align-items-center pt-2"
+                      >
+                        جديد
+                      </div>
+                      <div
+                        class="sale d-flex justify-content-center align-items-center"
+                        dir="ltr"
+                      >
+                        -6%
+                      </div>
+                    </div>
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/watch.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-2"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/laptop.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-3"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/50061505_575246.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-4"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="tags">
+                      <div
+                        class="new d-flex justify-content-center align-items-center pt-2"
+                      >
+                        جديد
+                      </div>
+                      <div
+                        class="sale d-flex justify-content-center align-items-center"
+                        dir="ltr"
+                      >
+                        -6%
+                      </div>
+                    </div>
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/watch.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-2"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="product">
+                    <div class="tags">
+                      <div
+                        class="new d-flex justify-content-center align-items-center pt-2"
+                      >
+                        جديد
+                      </div>
+                      <div
+                        class="sale d-flex justify-content-center align-items-center"
+                        dir="ltr"
+                      >
+                        -6%
+                      </div>
+                    </div>
+                    <div class="product-image-container">
+                      <img
+                        src="../assets/images/watch.png"
+                        class="product-image img-fluid"
+                      />
+                      <div
+                        class="justify-content-center align-items-center product-overlay pt-4"
+                      >
+                        <button
+                          class="btn rounded-circle shopping-cart me-2"
+                          type="button"
+                        >
+                          <img
+                            src="../assets/images/Icon metro-link.png"
+                            alt="add to shopping cart"
+                            width="17"
+                            height="17"
+                          />
+                        </button>
+                        <button
+                          class="btn rounded-circle wishlist ms-1"
+                          type="button"
+                          data-bs-toggle="modal"
+                          data-bs-target="#favorite-modal"
+                        >
+                          <img
+                            src="../assets/images/icon-heart-active.svg"
+                            alt="add to favorites"
+                            width="16"
+                            height="14"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="d-flex flex-column justify-content-center align-items-center"
+                    >
+                      <div class="product-name">Apple iPad Pro</div>
+                      <div class="stars mt-1" style="--rating: 4"></div>
+                    </div>
+                    <div class="d-flex justify-content-between fs-16 mt-2">
+                      <div class="d-flex">
+                        <div class="sale-price me-2">ILS 499</div>
+                        <div class="old-price">ILS 599</div>
+                      </div>
+                      <div class="circles">
+                        <span class="rounded-circle1"></span>
+                        <span class="rounded-circle2"></span>
+                        <span class="rounded-circle3"></span>
+                      </div>
+                    </div>
+                    <div class="fs-9 mb-2">غير شامل الضريبة</div>
+                    <div class="d-flex justify-content-between">
+                      <button
+                        class="add-btn me-2"
+                        id="btn-2"
+                        onclick="onClick(this)"
+                      >
+                        أضف إلى عربة التسوق
+                      </button>
+                      <button class="comp-btn">
+                        <img src="../assets/images/Group 10037.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div
+      class="modal fade"
+      id="favorite-modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5
+              class="modal-title w-100 text-center fs-16 active-color mt-2 fw-bold"
+            >
+              أضف العنصر للمفضلة
+            </h5>
+            <button
+              type="button"
+              class="btn-close close-color"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fs-12 text-center fw-bold">
+              اختر الكوليكشن الذي تريد إضافة المنتج عليه، يمكنك انشاء كوليشن
+              جديد
+            </p>
+            <div class="d-flex">
+              <div class="rectangle"></div>
+              <p class="ms-3 ph-text fs-13">كوليكشن الجوالات</p>
+            </div>
+            <div class="d-flex mt-2">
+              <div class="rectangle"></div>
+              <p class="ms-3 ph-text fs-13">ألعاب الاطفال</p>
+            </div>
+            <div class="d-flex mt-2">
+              <div class="rectangle"></div>
+              <p class="ms-3 ph-text fs-13">الالكترونيات</p>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="d-flex">
+              <div class="circle">
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <p class="ms-2 ph-textt fs-13">إضافة كوليكشن جديد</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal modal-lg fade"
+      id="imge-modal"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header border-bottom-0">
+            <h5 class="modal-title w-100 ms-2 fs-16 active-color mt-2 fw-bold">
+              تقييم منتجات الطلب
+            </h5>
+            <button
+              type="button"
+              class="btn-close close-color fs-12"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body pt-0">
+            <form action="" method="">
+              <p class="fs-12 ms-2">
+                نسعد بتقييمك لمنتجات الطلب، هذا يحفزنا للمضي قدما نحو تلبية
+                احتياجاتكم
+              </p>
+              <div class="d-flex" style="height: 40px">
+                <div class="rate3 mt-1 ms-3">
+                  <input type="radio" id="star1" name="rate" value="1" />
+                  <label for="star1" title="text">1 stars</label>
+                  <input type="radio" id="star2" name="rate" value="2" />
+                  <label for="star2" title="text">2 stars</label>
+                  <input
+                    type="radio"
+                    id="star3"
+                    name="rate"
+                    value="3"
+                    checked
+                  />
+                  <label for="star3" title="text">3 stars</label>
+                  <input type="radio" id="star4" name="rate" value="4" />
+                  <label for="star4" title="text">4 stars</label>
+                  <input type="radio" id="star5" name="rate" value="5" />
+                  <label for="star5" title="text">5 star</label>
+                </div>
+                <p class="mt-2 fs-19 p-rate-color">3.0</p>
+              </div>
+              <textarea
+                class="form-control text-area optional-text mt-0"
+                id=""
+                rows="4"
+                placeholder="تعليقك (اختياري)"
+              ></textarea>
+              <span class="switch d-flex justify-content-between mt-3">
+                <div class="d-flex">
+                  <input
+                    type="checkbox"
+                    class="switch"
+                    id="switch-id2"
+                    data-toggle="collapse"
+                  />
+                  <label for="switch-id2"></label>
+                  <p class="fs-14 color-g mt-2 ms-2">أرفق صورة (اختياري)</p>
+                  <p class="fs-14 color-gg mt-2 ms-2">أرفق صورة (اختياري)</p>
+                </div>
+              </span>
+              <div class="contentX">
+                <div class="form-group file-area">
+                  <input
+                    class="form-control"
+                    type="file"
+                    id="images"
+                    accept=".jpg, .jpeg, .png"
+                    required
+                  />
+                  <div
+                    class="border-dark border-opacity-25 file-dummy rounded-2"
+                  >
+                    <div class="success">تم ارفاق الملف بنجاح</div>
+                    <div class="default">
+                      <div class="d-flex felx-row justify-content-between">
+                        <div class="col-11">
+                          <div class="text-start fw-bolder fs-15">
+                            ارفق صورة مع التقييم
+                          </div>
+                          <div class="text-start fs-15 text-black-50">
+                            اقصى حجم 5 ميغا, الامتداد المسموح JPG,PNG,JPEG
+                          </div>
+                        </div>
+                        <div class="col-1">
+                          <img
+                            src="../assets/images/file_upload.png"
+                            width="45px"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button class="save-btn">حفظ وارسال</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="bg-footer">
+      <div class="border-top border-bottom pt-5 py-4 mt-5 row container-fluid">
+        <div class="col-lg col"></div>
+        <div class="col-12 col-lg-auto mb-4 p-r">
+          <div class="d-flex mb-2">
+            <img
+              src="../assets/images/logo.svg"
+              alt="logo"
+              class="footer-header-logo"
+            />
+            <div class="ms-2">
+              <div class="text-uppercase fw-bold text-395077 fs-14">
+                fratello store
+              </div>
+              <img
+                src="../assets/images/call_center.svg"
+                alt="Brands You Need"
+              />
+            </div>
+          </div>
+          <div class="text-wrap footer-long-text">
+            هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا
+            النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد
+            من النصوص الأخرى إضافة إلى زيادة عدد
+          </div>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4 p-r">
+          <div class="fs-16 footer-header mb-4">معلومات</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4">
+          <div class="fs-16 footer-header mb-4">حسابي</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4 p-r">
+          <div class="fs-16 footer-header mb-4">خدمة العملاء</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-6 col-lg-auto mb-4">
+          <div class="fs-16 footer-header mb-4">روابط مساعدة</div>
+          <a href="#" class="footer-link">الرابط هنا</a>
+          <a href="#" class="footer-link">الرابط هناااا</a>
+          <a href="#" class="footer-link">الرابط هنااااااا</a>
+          <a href="#" class="footer-link">الرابط هنا بالكامل</a>
+        </div>
+        <div class="col-lg col"></div>
+        <div class="col-12 col-lg-auto mb-4 p-r">
+          <div class="fs-16 footer-header mb-4">تواصل معنا</div>
+          <a href="#" class="footer-link"
+            >العنوان: دوار المنارة، رام الله، فلسطين</a
+          >
+          <a href="#" class="footer-link">0123-456-789</a>
+          <a href="#" class="footer-link">support@abismail.com</a>
+          <a href="#"
+            ><img
+              src="../assets/images/facebook.svg"
+              alt="facebook"
+              class="footer-facebook me-2"
+          /></a>
+          <a href="#"
+            ><img
+              src="../assets/images/twitter.svg"
+              alt="twitter"
+              class="footer-twitter"
+          /></a>
+        </div>
+        <div class="col-lg"></div>
+      </div>
+      <div
+        class="d-flex justify-content-center justify-content-sm-between align-items-center flex-wrap mt-4 container"
+      >
+        <div class="footer-header fs-14 mx-2 mx-sm-0 mb-4">
+          جميع الحقوق محفوظة &copy; 2022
+        </div>
+        <div class="d-flex mx-2 mx-sm-0 mb-4">
+          <img src="../assets/images/visa.svg" alt="visa" class="me-3" />
+          <img src="../assets/images/paypal.svg" alt="paypal" class="me-3" />
+          <img
+            src="../assets/images/mastercard.svg"
+            alt="mastercard"
+            class="me-3"
+          />
+          <img src="../assets/images/western-union.svg" alt="western union" />
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/0bc6d6359c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="../assets/js/index.js"></script>
+
+    <script>
+      const plus = document.querySelectorAll(".plus"),
+        minus = document.querySelectorAll(".minus");
+      var computerScore = document.getElementById("computerScore");
+      var num = computerScore.innerHTML;
+      const basket = document.querySelector(".basket-btn");
+      for (let p = 0; p < plus.length; p++) {
+        plus[p].addEventListener("click", function () {
+          num++;
+          basket.style.opacity = "1";
+          computerScore.innerHTML = num;
+        });
+      }
+
+      for (let m = 0; m < minus.length; m++) {
+        minus[m].addEventListener("click", function () {
+          if (num > 0) {
+            num--;
+            computerScore.innerHTML = num;
+          }
+          if (num == 0) {
+            basket.style.opacity = "0.2";
+          }
+        });
+      }
+      function openTab(evt, tabDetails) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabDetails).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      document.getElementById("defaultOpennn").click();
+    </script>
+  </body>
+</html>

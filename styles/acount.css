@@ -1,0 +1,488 @@
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf") format("truetype");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+  background-color: var(--bg-offwhite);
+}
+
+.account {
+  /* third tab*/
+}
+.account .white-div {
+  width: auto;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+.account .account-details {
+  width: 900px;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid #ececec;
+}
+.account .awaiting-payment-text {
+  color: #fec440;
+}
+.account .account-details-text {
+  margin-right: 40px;
+}
+.account .card {
+  width: 275px;
+  height: 150px;
+  border-radius: 12px;
+  background-color: #747474;
+}
+.account .virtual {
+  width: 71px;
+  height: 28px;
+  background-color: #121212;
+  color: #ffffff;
+  border-radius: 8px 8px 8px 0px;
+  position: absolute;
+  left: -1px;
+  top: -10px;
+}
+.account .add-card {
+  width: 275px;
+  height: 150px;
+  border-radius: 12px;
+  border: 1px dashed #5d5d5d;
+  margin-left: 18px;
+  cursor: pointer;
+}
+.account #add-address .modal-body {
+  padding-top: 0px;
+}
+.account #add-card .modal-body {
+  padding-top: 0px;
+}
+.account .card-text {
+  color: #747474;
+}
+.account .name {
+  color: #ffffff;
+  opacity: 56%;
+}
+.account .del-btn {
+  color: #f83838;
+  width: 56px;
+  height: 29px;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-weight: 700;
+  padding-top: 6px;
+}
+.account .default-btn {
+  border-radius: 15px;
+  border: 1px solid #ffffff;
+  width: 190px;
+  height: 29px;
+  background-color: transparent;
+  color: #ffffff;
+}
+.account .delete {
+  color: #f83838;
+}
+.account .card-container {
+  width: 412px;
+  height: 194px;
+  border-radius: 10px;
+  background-color: rgba(246, 247, 248, 0.5);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.account .modal-input2 {
+  width: 378px;
+  height: 43px;
+  border: 2px solid #f1f3f4;
+  background-color: #f1f3f4;
+}
+.account .modal-input2::-moz-placeholder {
+  font-size: 13px;
+  color: rgba(38, 38, 38, 0.5);
+}
+.account .modal-input2::placeholder {
+  font-size: 13px;
+  color: rgba(38, 38, 38, 0.5);
+}
+.account .modal-input2:focus {
+  background-color: #ffffff;
+}
+.account .plh-color {
+  background-color: #f1f3f4;
+  width: 378px;
+  height: 43px;
+  border: 2px solid #f1f3f4;
+  background-image: url(../assets/images/visa2.PNG);
+  background-position: 3% 10px;
+  background-repeat: no-repeat;
+}
+.account .plh-color:focus {
+  background-color: #ffffff;
+}
+.account .plh-color::-moz-placeholder {
+  font-size: 13px;
+  background-color: transparent;
+}
+.account .plh-color::placeholder {
+  font-size: 13px;
+  background-color: transparent;
+}
+.account .date-input {
+  width: 182px;
+  height: 43px;
+  border: 2px solid #f1f3f4;
+  background-color: #f1f3f4;
+}
+.account .date-input:focus {
+  background-color: #ffffff;
+}
+.account .date-input::-moz-placeholder {
+  font-size: 13px;
+  color: rgba(38, 38, 38, 0.5);
+}
+.account .date-input::placeholder {
+  font-size: 13px;
+  color: rgba(38, 38, 38, 0.5);
+}
+.account .delivery-card {
+  width: 365px;
+  height: 167px;
+  border-radius: 7px;
+  border: 1px solid #e1e5eb;
+  margin-right: 23px;
+  margin-bottom: 15px;
+}
+.account .fields2 {
+  border-radius: 4px;
+  border: 2px solid rgba(2, 50, 235, 0.1490196078);
+  height: 50px;
+}
+.account .fields2::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 350;
+}
+.account .fields2::placeholder {
+  font-size: 15px;
+  font-weight: 350;
+}
+.account .select-box {
+  background-color: #fafafb;
+  color: #456ed6;
+  font-size: 15px;
+  padding: 8.5px;
+}
+.account select {
+  width: 100%;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #f1f3f4;
+}
+.account .product-back {
+  width: auto;
+  height: 261px;
+  border-radius: 7px;
+  border: 1px solid #e1e5eb;
+  margin-left: 23px;
+}
+.account .review-btn {
+  width: 98px;
+  height: 28px;
+  background-color: #fec440;
+  border-radius: 8px;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  padding-top: 5.5px;
+}
+.account .complete-btn {
+  width: 68px;
+  height: 28px;
+  border-radius: 8px;
+  background-color: #25be2a;
+  border: none;
+  color: white;
+  padding-top: 5.5px;
+}
+.account .back-table td:first-child {
+  border-left: 1px solid #e1e5eb;
+}
+.account .table > thead {
+  vertical-align: middle;
+}
+.account .virtual-btn {
+  width: 71px;
+  height: 28px;
+  background-color: #121212;
+  color: #ffffff;
+  border-radius: 8px;
+}
+.account .address-btn {
+  width: 89px;
+  height: 28px;
+  background-color: #fec440;
+  color: #000000;
+  border-radius: 8px;
+  border: none;
+}
+.account .add-btn {
+  width: 109px;
+  height: 29px;
+  border-radius: 6px;
+  border: 1px solid #456ed6;
+  background-color: #ffffff;
+  color: #456ed6;
+  font-weight: 500px;
+  padding-top: 5.5px;
+}
+.account .more-btn {
+  width: 100px;
+  height: 48px;
+  border: none;
+  background-color: rgba(69, 110, 214, 0.1);
+  border-radius: 4px;
+  color: #456ed6;
+  font-weight: bold;
+}
+.account p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+.account .nav-link {
+  padding: 19px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.account .active-img {
+  display: none;
+}
+.account .nonactive-img {
+  display: inline;
+}
+.account .margin-right {
+  margin-right: 18px;
+  /*    margin-left: 23px; */
+}
+.account .search-input {
+  width: 200px;
+  height: 38px;
+  border-radius: 20px;
+  border: 1px solid #f5f5f5;
+  background-color: rgba(116, 116, 116, 0.1);
+  margin-right: 90px;
+}
+.account .search-input::-moz-placeholder {
+  font-size: 14px;
+  color: #121212;
+  opacity: 50%;
+}
+.account .search-input::placeholder {
+  font-size: 14px;
+  color: #121212;
+  opacity: 50%;
+}
+.account .select-boxes {
+  width: 116px;
+  height: 38px;
+  color: #456ed6;
+}
+.account .nav-item .active {
+  background-color: #f3fbff;
+  border-radius: 10px;
+  color: #456ed6;
+}
+.account .nav-item .active .active-img {
+  display: inline;
+}
+.account .nav-item .active .nonactive-img {
+  display: none;
+}
+.account .border-btm {
+  border-bottom: 1px solid #e5e5e5;
+}
+.account .text-input {
+  height: 50px;
+  border-radius: 4px;
+}
+.account .modal-input::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 350;
+  color: #262626;
+  opacity: 50%;
+}
+.account .modal-input::placeholder {
+  font-size: 15px;
+  font-weight: 350;
+  color: #262626;
+  opacity: 50%;
+}
+.account .ch-btn {
+  width: 243px;
+  height: 46px;
+  background-color: #456ed6;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+}
+.account .text-input::-moz-placeholder {
+  font-size: 16px;
+  font-weight: 350px;
+  color: #262626;
+  opacity: 50%;
+}
+.account .text-input::placeholder {
+  font-size: 16px;
+  font-weight: 350px;
+  color: #262626;
+  opacity: 50%;
+}
+.account .text-input-p {
+  background-color: #f6f7f8;
+  padding-top: 1rem !important;
+}
+.account .change-btn {
+  width: 200px;
+  height: 46px;
+  border: none;
+  background-color: #456ed6;
+  color: #ffffff;
+  margin-top: 68px;
+  border-radius: 4px;
+  margin-bottom: 32px;
+  margin-right: 18px;
+}
+.account .eye-pwd {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.account .change-pwd {
+  width: 200px;
+  height: 49px;
+  border-radius: 3px;
+  border: none;
+  color: #121212;
+  background-color: rgba(116, 116, 116, 0.14);
+  left: 12px;
+  font-weight: bold;
+  position: absolute;
+  top: 0px;
+  text-decoration: none;
+  padding-top: 15px;
+  cursor: pointer;
+}
+
+.active-color {
+  color: #456ed6;
+  font-weight: 500;
+}
+
+.black-color {
+  color: #171717;
+  font-weight: 500;
+}
+
+.black-color2 {
+  color: #22262a;
+  font-weight: 350;
+}
+
+.medium-font {
+  font-weight: 500;
+}
+
+.logout-color {
+  color: #ff4858;
+  font-weight: 500;
+}
+
+.d-color {
+  color: #262626;
+}
+
+@media screen and (min-width: 1500px) {
+  .account .white-div {
+    width: auto;
+  }
+}
+@media (max-width: 1093px) {
+  .account .delivery-card {
+    width: 330px;
+    height: 150px;
+  }
+  .account .delivery-card .fs-14 {
+    font-size: 13px !important;
+  }
+  .account .product-back {
+    width: 680px;
+  }
+}
+@media only screen and (max-width: 1243px) {
+  .account .account-details {
+    width: 850px;
+  }
+  .account .card {
+    width: 240px;
+  }
+  .account .add-card {
+    width: 240px;
+  }
+  .account .default-btn {
+    width: 160px;
+  }
+}
+@media (max-width: 1093px) {
+  .account .account-details {
+    width: 750px;
+  }
+  .account .card {
+    width: 225px;
+  }
+  .account .add-card {
+    width: 225px;
+  }
+  .account .default-btn {
+    width: 120px;
+  }
+}
+@media (max-width: 950px) {
+  .account .change-pwd {
+    width: 150px;
+  }
+  .account .account-details {
+    width: auto;
+  }
+  .account .white-div {
+    margin-bottom: 30px;
+  }
+  .account .plh-color {
+    width: 275px;
+  }
+  .account .modal-input2 {
+    width: 275px;
+  }
+  .account .date-input {
+    width: 130px;
+  }
+  .account .ch-btn {
+    width: 190px;
+  }
+}
+.hide-default {
+  display: none;
+}
+
+.show-default {
+  display: inline-block;
+}/*# sourceMappingURL=acount.css.map */

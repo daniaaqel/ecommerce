@@ -1,0 +1,55 @@
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+.bill .title {
+  color: #171717;
+  font-weight: bold;
+}
+.bill .form-control {
+  border-radius: 4px;
+  border: 2px solid #F1F3F4;
+  padding: 21px;
+}
+.bill select {
+  color: #456ED6;
+}
+.bill select option {
+  color: #456ED6;
+}
+.bill .form-select {
+  padding: 21px;
+}
+.bill .buy-now .btn {
+  background-color: #456ED6;
+  color: #FFFFFF;
+  width: 540px;
+  height: 46px;
+  border-radius: 4px;
+}
+.bill .mt-45 {
+  margin-top: 45px;
+}
+.bill .mb-60 {
+  margin-bottom: 60px;
+}
+.bill .gray-div {
+  width: 570px;
+  height: 67px;
+  background-color: rgba(246, 247, 248, 0.5);
+}
+.bill .quantity-color {
+  color: #456ED6;
+  font-weight: bold;
+}
+.bill .border-btm {
+  border-bottom: 3px solid #F6F7F8;
+}
+.bill .price-color {
+  color: #FF4858;
+}
+
+.p-color {
+  color: #262626;
+}/*# sourceMappingURL=pay.css.map */

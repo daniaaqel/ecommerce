@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="_3_Background_Mask_" data-name="3 (Background/Mask)" width="25" height="25" transform="translate(-1 -1)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="_3" data-name="3" transform="translate(1 1)">
+    <rect id="_3_Background_Mask_2" data-name="3 (Background/Mask)" width="23" height="23" fill="none"/>
+    <g id="_3-2" data-name="3" clip-path="url(#clip-path)">
+      <g id="Group" transform="translate(2.197 1.747)">
+        <path id="Vector" d="M14.458,15.552V7.229A7.229,7.229,0,0,0,0,7.229v8.323H14.458Z" transform="translate(2.304)" fill="none" stroke="#cdd4d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" stroke-dasharray="0 0"/>
+        <path id="Vector-2" data-name="Vector" d="M19.077,0H0" transform="translate(0 15.553)" fill="none" stroke="#cdd4d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" stroke-dasharray="0 0"/>
+        <path id="Vector-3" data-name="Vector" d="M0,0A2.126,2.126,0,0,0,2.125,2.125,2.12,2.12,0,0,0,4.251,0" transform="translate(7.418 17.649)" fill="none" stroke="#cdd4d9" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" stroke-dasharray="0 0"/>
+      </g>
+    </g>
+  </g>
+</svg>

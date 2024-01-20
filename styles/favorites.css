@@ -1,0 +1,143 @@
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf") format("truetype");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+  background-color: var(--bg-offwhite);
+}
+
+.favorites .form-check-input {
+  width: 1.5em;
+  height: 1.5em;
+}
+.favorites .rectangle {
+  height: 196px;
+  width: 196px;
+  margin-left: 16px;
+  border-radius: 10px;
+  border: 1px solid #747474;
+  margin-bottom: 21px;
+}
+.favorites .dash-rectangle {
+  height: 196px;
+  width: 196px;
+  margin-left: 16px;
+  border-radius: 10px;
+  border: 2px dashed #747474;
+  margin-bottom: 21px;
+}
+.favorites a {
+  text-decoration: none;
+  color: #121212;
+  font-size: 16px;
+  font-weight: bold;
+}
+.favorites .phone-collection i.fa-solid {
+  display: inline-block;
+  border-radius: 60px;
+  background-color: #456ed6;
+  padding: 6px 6px;
+  color: white;
+  font-size: 12px;
+}
+.favorites .form-check-input {
+  margin-top: 0px;
+}
+.favorites i.fa-circle-plus {
+  color: #747474;
+  position: relative;
+  right: 50px;
+}
+
+@media (max-width: 950px) {
+  .favourite-container {
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .favourite-container .slider {
+    flex-shrink: 0;
+    width: auto;
+  }
+  .favourite-container::-webkit-scrollbar {
+    width: 0;
+  }
+}
+.firstClass,
+.secondClass,
+.thirdClass,
+.forthClass {
+  border: none;
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.firstClass i,
+.secondClass i,
+.thirdClass i,
+.forthClass i {
+  display: none;
+}
+.firstClass div,
+.secondClass div,
+.thirdClass div,
+.forthClass div {
+  display: none;
+}
+.firstClass:hover,
+.secondClass:hover,
+.thirdClass:hover,
+.forthClass:hover {
+  justify-content: center;
+}
+.firstClass:hover i,
+.secondClass:hover i,
+.thirdClass:hover i,
+.forthClass:hover i {
+  display: inline-block;
+  border-radius: 60px;
+  background-color: #456ed6;
+  padding: 6px 6px;
+  color: white;
+  font-size: 12px;
+}
+.firstClass:hover div,
+.secondClass:hover div,
+.thirdClass:hover div,
+.forthClass:hover div {
+  display: none;
+}
+.firstClass:active,
+.secondClass:active,
+.thirdClass:active,
+.forthClass:active {
+  justify-content: space-between;
+  border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+  border-radius: var(--bs-border-radius) !important;
+}
+.firstClass:active div,
+.secondClass:active div,
+.thirdClass:active div,
+.forthClass:active div {
+  display: flex;
+}
+.firstClass:active i,
+.secondClass:active i,
+.thirdClass:active i,
+.forthClass:active i {
+  display: none;
+}/*# sourceMappingURL=favorites.css.map */

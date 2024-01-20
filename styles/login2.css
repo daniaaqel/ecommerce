@@ -1,0 +1,21 @@
+@import '../assets/fonts/ff-shamel-family/ff-shamel-family.css';
+:root {
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf") format("truetype");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+  background-color: var(--bg-offwhite);
+}
+
+.welcome-again .login {
+  filter: opacity(0.67) drop-shadow(1px 1px 1px #456ED6);
+}/*# sourceMappingURL=login2.css.map */

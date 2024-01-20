@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="11" viewBox="0 0 16 11">
+  <g id="Icon" transform="translate(0 0)">
+    <g id="Icon-2" data-name="Icon" transform="translate(0 0)">
+      <g id="Group_21" data-name="Group 21">
+        <g id="menu">
+          <path id="Path_27" data-name="Path 27" d="M2.684,19.753h16V17.92h-16Zm0-4.583h16V13.337h-16Zm0-6.417v1.833h16V8.753Z" transform="translate(-2.684 -8.753)" fill="#456ed6"/>
+        </g>
+      </g>
+    </g>
+    <path id="Color_Overlay" data-name="Color Overlay" d="M0,11V9.167H16V11ZM0,6.416V4.583H16V6.416ZM0,1.833V0H16V1.833Z" transform="translate(0 0)" fill="#456ed6"/>
+  </g>
+</svg>

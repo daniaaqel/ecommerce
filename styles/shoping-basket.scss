@@ -1,0 +1,183 @@
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+@import "./helpers.scss";
+@import "./variables.scss";
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf")
+    format("truetype");
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+}
+.header {
+  margin-top: 0px;
+}
+.card-headerr{
+  border-bottom: 2px solid $colorF6F7F8;
+  padding-bottom: 16px;
+}
+.card-bodyy{
+  border-bottom: 2px solid $colorF6F7F8;
+
+}
+.price {
+  margin-top: 72px;
+} 
+
+.btn-delete {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 104, 117, 0.05);
+  color: rgba(255, 66, 82, 1);
+  display: flex;
+  justify-content: center;
+  margin-top: 70px; 
+  margin-right: 10px;
+  margin-left: 30px;
+ 
+  i {
+    font-size: 12px;
+  }
+}
+.wrapper {
+  width: 116px;
+  height: 46px;
+  background-color: $colorF6F7F8;
+  border-radius: 4px;
+  margin-top: 60px; 
+  .plus,
+  .minus {
+    cursor: pointer;
+  }
+}
+
+
+.bill {
+  .mar-lef {
+    margin-right: 6.5rem;
+  }
+  .discount {
+    border-radius: 4px;
+    background-color: $white;
+    border: 2px solid $colorF1F3F4;
+    width: 250px;
+    height: 60px;
+  }
+  .discount::placeholder {
+    font-size: 16px;
+    color: rgba(38, 38, 38, 0.5);
+  }
+  .sure {
+    background-color: $color22262A;
+    height: 60px;
+    width: 118px;
+  }
+  .button {
+    font-size: 16px !important;
+  }
+  .btn {
+    color: $white;
+    width: 118px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .marr-419 {
+    margin-right: 250px;
+  }
+
+  .mb-33 {
+    margin-bottom: 33px;
+  }
+  .mr-293 {
+    margin-right: 265px;
+  }
+  .mr-238 {
+    margin-right: 211px;
+  }
+  .mr-254 {
+    margin-right: 229px;
+  }
+  .border-btm {
+    border-bottom: 1px solid #f6f7f8;
+  }
+  .mt-26 {
+    margin-top: 26px;
+  }
+  .mr-185 {
+    margin-right: 165px;
+  }
+  .color-ILS {
+    color: $colorFF4858;
+  }
+  .buy-now .btn {
+    background-color: $active;
+    color: $white;
+    width: 370px;
+    height: 46px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .mt-45 {
+    margin-top: 45px;
+  }
+  .mb-60 {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 950px) {
+.price{
+  margin-top: 35px;
+}
+.wrapper{
+  margin-top: 0px;
+}
+  .bill {
+    .buy-now .btn {
+      width: 220px;
+      font-size: 7px;
+    }
+    .marr-419 {
+      margin-right: 100px;
+    }
+    .mar-lef {
+      margin-right: 0rem;
+    }
+    .mr-293 {
+      margin-right: 150px;
+    }
+    .mr-238 {
+      margin-right: 125px;
+    }
+    .mr-254 {
+      margin-right: 120px;
+    }
+    .mr-185 {
+      margin-right: 108px;
+    }
+    .discount {
+    /*   width: 100px; */
+      height: 40px;
+      margin-bottom: 20px;
+    }
+    .discount::placeholder {
+      font-size: 12px;
+    }
+    .btn {
+      width: 71px;
+      font-size: 12px;
+    }
+    .sure {
+      height: 40px;
+    }
+    .fs-16 {
+      font-size: 12px !important;
+    }
+    .fs-24 {
+      font-size: 12px !important;
+    }
+  }
+}

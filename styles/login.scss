@@ -1,0 +1,350 @@
+@import "./variables.scss";
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf")
+    format("truetype");
+}
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.welcome-page {
+  .main-btn {
+    border: 1px solid $colorF2F2FF;
+    width: 167px;
+    height: 40px;
+    background-color: transparent;
+    color: $white;
+    border-radius: 8px;
+    margin-bottom: 123px;
+    top: 10px;
+  }
+
+  .right {
+    position: absolute;
+    right: 60px;
+  }
+  .welcome {
+    color: $white;
+    font-weight: bold;
+    top: 240px;
+  }
+  .text-input {
+    width: 394px;
+    height: 60px;
+    border-radius: 4px;
+    border: 2px solid $colorF1F3F4;
+    background-color: $color1717172E;
+  }
+  .text-input::placeholder {
+    font-size: 14px;
+    color: $white;
+    opacity: 50%;
+  }
+  .password-lable-position {
+    top: 450px;
+  }
+  .password-position {
+    top: 470px;
+  }
+  .lable-color {
+    color: $white;
+    font-weight: 500;
+  }
+  .lable-position {
+    top: 330px;
+  }
+  .mar-left {
+    margin-left: 220px;
+  }
+  .text-position {
+    top: 360px;
+  }
+  .login-btn {
+    width: 230px;
+    height: 46px;
+    border-radius: 4px;
+    color: $white;
+    background-color: $active;
+    border: none;
+    top: 580px;
+    font-weight: 500;
+  }
+  .logo-btn1 {
+    width: 46px;
+    height: 46px;
+    border: 0.5px solid $color9F9F9F;
+    background-color: $white;
+    border-radius: 7.5px;
+    top: 580px;
+    right: 300px;
+  }
+  .logo-btn2 {
+    width: 46px;
+    height: 46px;
+    border: 0.5px solid $color9F9F9F;
+    background-color: $white;
+    border-radius: 7.5px;
+    top: 580px;
+    right: 350px;
+  }
+  .eye-class {
+    left: 20px;
+    top: 20px;
+  }
+  .eye-class2 {
+    left: 20px;
+    top: 20px;
+  }
+  .mt-93 {
+    margin-top: 93px;
+  }
+  .over-lay {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(69, 110, 214, 0.67),
+        rgba(69, 110, 214, 0.67)
+      );
+    }
+  }
+  .div-position {
+    padding-top: 93px;
+    padding-right: 103px;
+    .margin-top {
+      margin-top: 36px;
+    }
+  }
+  .welcome-text {
+    color: $color1650A3;
+    font-weight: bold;
+  }
+  .input-style {
+    width: 256px;
+    height: 60px;
+    border: 2px solid $colorF1F3F4;
+  }
+  .input-style::placeholder {
+    color: $color262626;
+    opacity: 50%;
+    font-size: 14px;
+  }
+  .hidden-btn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.color {
+  color: $color191A1B;
+  font-weight: 350;
+}
+.lable-color3 {
+  color: $colorAAAAAA;
+}
+
+.btn-close {
+  box-sizing: inherit;
+}
+.flex-fill {
+  flex: 1 1 auto;
+}
+.container-fluid {
+  padding-right: 0px;
+}
+.black-color {
+  color: $black;
+}
+.active-color {
+  color: $active;
+}
+.close-color {
+  color: #cdd4d9;
+}
+/* 125 */
+@media screen and (max-width: 1093px) {
+  .welcome-page {
+    .row {
+      --bs-gutter-x: 0rem;
+    }
+    .mar-left {
+      margin-left: 270px;
+    }
+    .input-style {
+      width: 200px;
+      height: 60px;
+    }
+    .div-position {
+      .fs-14 {
+        font-size: 13px !important;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1093px) {
+  .welcome-page {
+    .div-position {
+      .fs-14 {
+        font-size: 13px !important;
+      }
+    }
+  }
+}
+
+/* 150 */
+@media screen and (max-width: 950px) {
+  .welcome-page {
+    .right {
+      position: absolute;
+      right: 45px;
+    }
+    .text-input {
+      width: 300px;
+    }
+    .mar-left {
+      margin-left: 168px;
+    }
+    .welcome {
+      top: 140px;
+    }
+    .lable-position {
+      top: 185px;
+    }
+    .text-position {
+      top: 205px;
+    }
+    .password-lable-position {
+      top: 295px;
+    }
+    .password-position {
+      top: 316px;
+    }
+    .login-btn {
+      top: 436px;
+      width: 175px;
+    }
+    .logo-btn1 {
+      top: 436px;
+      right: 228px;
+    }
+    .logo-btn2 {
+      top: 436px;
+      right: 278px;
+    }
+    .fs-16 {
+      font-size: 13px !important;
+    }
+    .fs-24 {
+      font-size: 18px !important;
+    }
+    .main-btn {
+      width: 127px;
+    }
+    .text-input::placeholder {
+      font-size: 10px !important;
+    }
+
+    .div-position {
+      padding-top: 50px;
+      padding-right: 45px;
+      .fs-14 {
+        font-size: 12px !important;
+      }
+    }
+    .input-style {
+      width: 152px;
+      height: 60px;
+    }
+    .input-style::placeholder {
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1243px) {
+  .welcome-page .input-style {
+    width: 240px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 1093px) {
+  .welcome-page .input-style {
+    width: 200px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .welcome-page {
+    .welcome {
+      top: 130px;
+    }
+    .lable-position {
+      top: 175px;
+    }
+    .text-position {
+      top: 195px;
+    }
+    .password-lable-position {
+      top: 265px;
+    }
+    .password-position {
+      top: 290px;
+    }
+    .login-btn {
+      top: 350px;
+    }
+    .logo-btn1 {
+      top: 350px;
+    }
+    .logo-btn2 {
+      top: 350px;
+    }
+    .text-input {
+      height: 45px;
+    }
+    .eye-class {
+      top: 12px;
+    }
+    .input-style {
+      width: 300px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  /*  .margin-top {
+    .col-lg-6 {
+      flex: 0 0 auto;
+      width: 47%;
+    }
+  } */
+  .welcome-page {
+    .div-position {
+      .margin-top {
+        margin-top: 0px;
+      }
+    }
+  }
+  .position-mobile {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+}
+

@@ -1,0 +1,287 @@
+@import "./variables.scss";
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf")
+    format("truetype");
+}
+/* body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+  background-color: var(--bg-offwhite);
+}
+
+.btn-delete {
+  width: 22px;
+  height: 22px;
+  color: $colorFF4858 !important;
+  background-color: rgba(
+    red($colorFF4858),
+    green($colorFF4858),
+    blue($colorFF4858),
+    0.1
+  ) !important;
+}
+
+.awaiting-payment-text {
+  color: $colorFF4858;
+}
+
+.order-details-btn {
+  color: $active !important;
+  background-color: rgba(
+    red($active),
+    green($active),
+    blue($active),
+    0.2
+  ) !important;
+  font-weight: bold;
+}
+
+
+.wrapper {
+  width: 181px;
+  height: 48px;
+  background-color: $colorF3FBFF;
+  border-radius: 7px;
+  .plus,
+  .minus {
+    cursor: pointer;
+  }
+}
+table {
+  width: 100%;
+
+  th {
+    font-size: 16px;
+    color: $color22262A;
+    line-height: 28px;
+    letter-spacing: 0px;
+    font-weight: normal;
+    padding: 1rem;
+  }
+
+  tr:not(:last-of-type),
+  thead tr {
+    border-bottom: 2px solid $colorF6F7F8;
+  }
+}
+
+@media (max-width: 950px) {
+  .scroll-behavior {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    .scrolled-item {
+      flex-shrink: 0;
+      width: auto;
+    }
+    .fs-16 {
+      font-size: 8px !important;
+    }
+    .fs-10 {
+      font-size: 5px !important;
+    }
+    .fs-17 {
+      font-size: 9px !important;
+    }
+    .fs-22 {
+      font-size: 11px !important;
+    }
+    .product-img {
+      img {
+        width: 49px;
+        height: 49px;
+      }
+    }
+    .wrapper {
+      width: 90.5px;
+      height: 24px;
+    }
+  }
+  .fs-18 {
+    font-size: 9px !important;
+  }
+} */
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+}
+.color8A {
+  color: $color8A888C;
+}
+.header {
+  margin-top: 0px;
+}
+.card-headerr{
+  border-bottom: 2px solid $colorF6F7F8;
+  padding-bottom: 16px;
+}
+.card-bodyy{
+  border-bottom: 2px solid $colorF6F7F8;
+
+}
+.price {
+  margin-top: 72px;
+} 
+
+.btn-delete {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 104, 117, 0.05);
+  color: rgba(255, 66, 82, 1);
+  display: flex;
+  justify-content: center;
+  margin-top: 70px; 
+  margin-right: 10px;
+  margin-left: 30px;
+ 
+  i {
+    font-size: 12px;
+  }
+}
+.wrapper {
+  width: 116px;
+  height: 46px;
+  background-color: $colorF6F7F8;
+  border-radius: 4px;
+  margin-top: 60px; 
+  .plus,
+  .minus {
+    cursor: pointer;
+  }
+}
+
+
+.bill {
+  .mar-lef {
+    margin-right: 6.5rem;
+  }
+  .discount {
+    border-radius: 4px;
+    background-color: $white;
+    border: 2px solid $colorF1F3F4;
+    width: 250px;
+    height: 60px;
+  }
+  .discount::placeholder {
+    font-size: 16px;
+    color: rgba(38, 38, 38, 0.5);
+  }
+  .sure {
+    background-color: $color22262A;
+    height: 60px;
+    width: 118px;
+  }
+  .button {
+    font-size: 16px !important;
+  }
+  .btn {
+    color: $white;
+    width: 118px;
+    height: 60px;
+    font-size: 16px;
+  }
+  .marr-419 {
+    margin-right: 250px;
+  }
+
+  .mb-33 {
+    margin-bottom: 33px;
+  }
+  .mr-293 {
+    margin-right: 265px;
+  }
+  .mr-238 {
+    margin-right: 211px;
+  }
+  .mr-254 {
+    margin-right: 229px;
+  }
+  .border-btm {
+    border-bottom: 1px solid #f6f7f8;
+  }
+  .mt-26 {
+    margin-top: 26px;
+  }
+  .mr-185 {
+    margin-right: 165px;
+  }
+  .color-ILS {
+    color: $colorFF4858;
+  }
+  .buy-now .btn {
+    background-color: $active;
+    color: $white;
+    width: 370px;
+    height: 46px;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  .mt-45 {
+    margin-top: 45px;
+  }
+  .mb-60 {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 950px) {
+.price{
+  margin-top: 35px;
+}
+.wrapper{
+  margin-top: 0px;
+}
+  .bill {
+    .buy-now .btn {
+      width: 220px;
+      font-size: 7px;
+    }
+    .marr-419 {
+      margin-right: 100px;
+    }
+    .mar-lef {
+      margin-right: 0rem;
+    }
+    .mr-293 {
+      margin-right: 150px;
+    }
+    .mr-238 {
+      margin-right: 125px;
+    }
+    .mr-254 {
+      margin-right: 120px;
+    }
+    .mr-185 {
+      margin-right: 108px;
+    }
+    .discount {
+    /*   width: 100px; */
+      height: 40px;
+      margin-bottom: 20px;
+    }
+    .discount::placeholder {
+      font-size: 12px;
+    }
+    .btn {
+      width: 71px;
+      font-size: 12px;
+    }
+    .sure {
+      height: 40px;
+    }
+    .fs-16 {
+      font-size: 12px !important;
+    }
+    .fs-24 {
+      font-size: 12px !important;
+    }
+  }
+}
+

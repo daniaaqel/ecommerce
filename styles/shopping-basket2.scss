@@ -1,0 +1,13 @@
+@import "./variables.scss";
+
+.basket {
+  .shop-now {
+    border: none;
+    background-color: $active;
+    border-radius: 4px;
+    width: 200px;
+    height: 46px;
+    color: $white;
+    margin-bottom: 109px;
+  }
+}

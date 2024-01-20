@@ -1,0 +1,97 @@
+@import "./variables.scss";
+@import "../assets/fonts/ff-shamel-family/ff-shamel-family.css";
+
+@import "./helpers.scss";
+
+@font-face {
+  font-family: "shamel";
+  src: url("../assets/fonts/ff-shamel-family/ff-shamel-family.ttf")
+    format("truetype");
+}
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "shamel";
+}
+.header {
+  margin-top: 0rem !important;
+}
+.contact-us {
+  .form-control {
+    border-radius: 4px;
+    border: 2px solid $colorF1F3F4;
+    padding: 21px;
+  }
+  ::placeholder {
+    font-size: 14px;
+    color: $color262626;
+    opacity: 50%;
+  }
+  .sent-btn {
+    width: 243px;
+    height: 46px;
+    border-radius: 4px;
+    color: $white;
+    background-color: $active;
+    border: none;
+  }
+}
+p {
+  margin-top: 0;
+  margin-bottom: 0rem;
+}
+
+.p-color {
+  color: $color171717;
+  font-weight: bold;
+}
+
+.p2-color {
+  color: $color262626;
+}
+
+.p3-color {
+  color: $active;
+  font-weight: bold;
+}
+.fw-b {
+  font-weight: bold;
+}
+.text-input {
+  height: 60px;
+}
+.text-area {
+  height: 132px;
+}
+@media (max-width: 950px) {
+  .contact-us {
+    .fs-18 {
+      font-size: 16px !important;
+    }
+    .fs-16 {
+      font-size: 12px !important;
+    }
+    .fs-13 {
+      font-size: 12px !important;
+    }
+    .fs-12 {
+      font-size: 12px !important;
+    }
+    .sent-btn {
+      width: 150px;
+    }
+    .text-area {
+      height: 120px;
+      font-size: 12px;
+    }
+    .text-input {
+      height: 10px;
+    }
+    .mb-5 {
+      margin-bottom: 2rem !important;
+    }
+    ::placeholder {
+      font-size: 12px;
+    }
+  }
+}

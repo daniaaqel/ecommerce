@@ -1,0 +1,14 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.basket .shop-now {
+  border: none;
+  background-color: #456ed6;
+  border-radius: 4px;
+  width: 200px;
+  height: 46px;
+  color: #ffffff;
+  margin-bottom: 109px;
+}/*# sourceMappingURL=shopping-basket2.css.map */
